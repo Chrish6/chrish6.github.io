@@ -1,10 +1,44 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+
 </head>
 <body>
-    <H1>Halvkurs</H1>
+    <header>
+        <div class="mobilemode">
+        <h1>My website</h1>
+        <div><span class="menuButton" id="MenuButton" onclick="toggleMenu()">&equiv;</span></div>
+        
+        </div>
+        <nav class="hidden">
+
+
+            <a href="/index.html">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="/about.html">About</a>
+
+        </nav>
+
+
+    </header>
+   
+    <footer>
+
+        <div class="contact" id="contact">
+            <h1>Contact</h1>
+            <p>Tele: 0712345678</p>
+            <p>E-mail: example@example.com</p>
+            <P>Address: 123 First street</P>
+
+
+        </div>
+
+
+    </footer>
 </body>
 </html>
