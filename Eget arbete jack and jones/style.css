@@ -16,14 +16,29 @@ header, main, footer{
 main, footer{
     padding: 3%;
 }
-main{
-    background-color: rgba(139, 139, 139, 0.295);
-    min-height: 1000px;
+/* START MESSAGE */
+.message{
+    background-color: black;
+    color: white;
+    text-align: center;
 }
+/* SLUT MESSAGE */
+/* START HEADER */
 header{
     display: grid;
-    height: 70px;
+    min-height: 70px;
 }
+/* start titel */
+.mobileMode h1{
+    text-align: center;
+    align-self: center;
+}
+@media(min-width:950px){
+    .mobileMode h1{
+        font-size: 4rem;
+    }
+}
+/* end titel */
 .mobileMode{
     display: grid;
     grid-template-columns: auto 1fr auto auto auto auto;
@@ -33,13 +48,24 @@ span{
     font-size: 30px;
     line-height: 30px;;
 }
-.mobileMode h1{
-    text-align: center;
-    align-self: center;
-}
+
 .menuButton{
     font-size: 35px;
 }
 .bi{
     font-size: 20px;
 }
+/* SLUT HEADER */
+/* main start */
+main{
+    background-color: rgba(139, 139, 139, 0.295);
+    min-height: 1000px;
+}
+
+/* main slut */
+/* START FOOTER */
+footer{
+    background-color: black;
+    color: white;
+}
+/* END FOOTER*/
