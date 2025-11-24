@@ -87,8 +87,9 @@ main{
 /* START FOOTER */
 footer{
     background-color: black;
-    color: white;
+    
 }
+<<<<<<< HEAD
 .headers{
     display: grid;
     font-weight: bold;
@@ -100,3 +101,6 @@ footer{
     }
 }
 /* END FOOTER*/
+=======
+/* END FOOTER*/
+>>>>>>> 5edfc5c136f304ac41d1348e73a39184fc415011
