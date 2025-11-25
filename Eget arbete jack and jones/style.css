@@ -14,17 +14,17 @@ header, main, footer{
 main, footer{
     padding: 3%;
 }
-/* START MESSAGE */
+/* start top MESSAGE */
 .message{
     background-color: black;
     color: white;
     text-align: center;
 }
-/* SLUT MESSAGE */
+/* SLUT top MESSAGE */
 /* START HEADER */
 header{
     display: grid;
-    min-height: 70px;
+
 }
 /* start titel */
 .mobileMode h1{
@@ -58,6 +58,34 @@ header{
     
 }
 /* end titel */
+.normalmeny a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+.normalmeny{
+    position: absolute;
+    top: 65px;
+    left: 25px;
+
+}
+.normalmeny .MAN{
+    font-weight: bold;
+   
+}
+.normalmeny .MAN:hover{
+
+    text-decoration: underline;
+}
+.normalmeny .WOMEN:hover{
+
+    text-decoration: underline;
+}
+.normalmeny .JUNIOR:hover{
+
+    text-decoration: underline;
+}
+
 .mobileMode{
     display: grid;
     grid-template-columns: auto 1fr auto auto auto auto;
@@ -87,9 +115,8 @@ main{
 /* START FOOTER */
 footer{
     background-color: black;
-    
+    color: white;
 }
-<<<<<<< HEAD
 .headers{
     display: grid;
     font-weight: bold;
@@ -99,8 +126,11 @@ footer{
     .headers{
     grid-template-columns: repeat(4,1fr);
     }
+   
 }
 /* END FOOTER*/
-=======
-/* END FOOTER*/
->>>>>>> 5edfc5c136f304ac41d1348e73a39184fc415011
+ .LINKS{ 
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    }
