@@ -31,9 +31,26 @@ header{
     text-align: center;
     align-self: center;
 }
+
+
 .Meny950px{
     display: none;
+    font-weight: bold;
 }
+.Meny950px .nyheter:hover{text-decoration: underline;}
+.Meny950px .KLÄDER:hover{text-decoration: underline;}
+.Meny950px .DENIM:hover{text-decoration: underline;}
+.Meny950px .SKOR:hover{text-decoration: underline;}
+.Meny950px .ACCESSOARER:hover{text-decoration: underline;}
+.Meny950px .REA:hover{text-decoration: underline;}
+.Meny950px .PREMIUM:hover{text-decoration: underline;}
+.Meny950px .PLUSSIZE:hover{text-decoration: underline;}
+.Meny950px .JUL:hover{text-decoration: underline;}
+
+
+
+
+
 @media(min-width:950px){
     .mobileMode h1{
         font-size: 4rem;
@@ -53,16 +70,23 @@ header{
         place-items: center;
         margin-left: 10%;
         margin-right: 10%;
-
+    
     }
     
 }
+
 /* end titel */
+@media(max-width:950px){
+    .normalmeny{
+    display: none;
+}
+}
 .normalmeny a{
     text-decoration: none;
     color: black;
     margin: 10px;
 }
+
 .normalmeny{
     position: absolute;
     top: 65px;
@@ -98,6 +122,7 @@ span{
 
 .menuButton{
     font-size: 35px;
+    margin-left: 8px;
 }
 .bi{
     font-size: 20px;
@@ -120,17 +145,51 @@ footer{
 .headers{
     display: grid;
     font-weight: bold;
+    
+}
+.links .headers2{
+    display: grid;
+    font-weight: bold;
+    font-size: medium;
+}
+
+footer .links{
+    display: grid;
+    width: 100%;
+    transition: all 2s;
+
+
+}
+.LINKS{ 
+    display: grid;
+    grid-template-rows: repeat(4,auto);    
+    font-size: small;
+    }
+
+
+.hidden{
+    height: 0;
+    padding: 0;
+    margin-right: -100vw;
+    overflow: hidden;
+    
 }
 
 @media(min-width:950px){
     .headers{
     grid-template-columns: repeat(4,1fr);
     }
-   
-}
-/* END FOOTER*/
- .LINKS{ 
+
+     .LINKS{ 
     font-size: small;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     }
+   .hidden{
+    overflow: visible;
+    height: auto;
+    margin: 0;
+   }
+}
+/* END FOOTER*/
+
