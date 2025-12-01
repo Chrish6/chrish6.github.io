@@ -153,25 +153,28 @@ footer{
     font-size: medium;
 }
 
-footer .links{
-    display: grid;
-    width: 100%;
-    transition: all 2s;
-
-
-}
 .LINKS{ 
     display: grid;
     grid-template-rows: repeat(4,auto);    
     font-size: small;
     }
 
+.m1{
+    display: none;
+}
+.m2{
+    display: none;
+}
+.m3{
+    display: none;
+}
+.m4{
+    display: none;
+}
 
-.hidden{
-    height: 0;
-    padding: 0;
-    margin-right: -100vw;
-    overflow: hidden;
+    
+.border{
+    border: 1px solid white;
     
 }
 
@@ -180,16 +183,18 @@ footer .links{
     grid-template-columns: repeat(4,1fr);
     }
 
-     .LINKS{ 
+    .LINKS{ 
     font-size: small;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     }
-   .hidden{
-    overflow: visible;
-    height: auto;
-    margin: 0;
-   }
-}
+   
+   .border{
+    display: none;
+    }
+    .hidden{ 
+    display: grid;
+    }   
+}    
 /* END FOOTER*/
 

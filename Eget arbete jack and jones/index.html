@@ -5,6 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div class="message">
@@ -46,9 +47,9 @@
         <div class="LINKS" id="LINKS">
         <div class="JACK">
             <div class="headers2">
-                <p>JACK & JONES</p>
+                <p onclick="myFunction()">JACK & JONES</p>
             </div>
-            <div class="hidden">
+            <div id="m1" class="m1 hidden">
             <p>OM JACK & JONES</p>
             <P>JOBB & KARRIÄR</P>
             <P>HITTA EN BUTIK</P>
@@ -60,25 +61,27 @@
             <P>CERIFIKAT</P>
             <P>FAQ</P>
         </div>
+        <div class="border"></div>
         </div>
         <div class="JJXX">
             <div class="headers2">
-                <p>JJXX</p>
+                <div onclick="toggleJJXX()">JJXX</div>
             </div>
-            <div class="hidden">
+            <div class="m2 hidden" id="m2">
             <P>OM JJXX</P>
             <P>INSTAGRAM</P>
             <P>FACEBOOK</P>
             <P>TIKTOK</P>
             <P>&CLUB</P>
             <P>FAQ</P>
-            </div>
+        </div>
+        <div class="border"></div>
         </div>
         <div class="HELP">
             <div class="headers2">
-                <p>HJÄLP</p>
+                <p onclick="toggleHelp()">HJÄLP</p>
             </div>
-            <div class="hidden">
+            <div class="m3 hidden" id="m3">
             <P>VAR ÄR MIN BESTÄLLNING?</P>
             <P>VILKA LEVERANSALTERNATIV ERBJUDER NI?</P>
             <P>HUR RETUNERAR JAG EN VARA?</P>
@@ -89,16 +92,18 @@
             <P>INTEGRITETSPOLICY</P>
             <P>COOKIE POLICY</P>
         </div>
+        <div class="border"></div>
         </div>
         <div class="BESTCELLER">
             <div class="headers2">
-                <p>OM BESTSELLER</p>
+                <p onclick="toggleBestceller()">OM BESTSELLER</p>
             </div>
-            <div class="hidden">
+            <div class="m4 hidden" id="m4">
             <P>JOBB</P>
             <P>FÖRETAGSNYHETER</P>
             <P>VÅRA PRODUKTER TILLVERKAS AV BESTSELLER A/S: FREDSKOVVEJ 5, DK- 7330 BRANDE I WWW.BESTSELLER.COM</P>
         </div>
+        <div class="border"></div>
         </div>
         </div>
     </footer>
