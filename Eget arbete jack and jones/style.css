@@ -48,8 +48,18 @@ header{
 .Meny950px .JUL:hover{text-decoration: underline;}
 
 
+    .normalmeny{
+    display: none;
+}
 
+.visible{
+    display: grid;
+    gap: 20px;
+}
 
+.hidden{
+    display:none;
+}
 
 @media(min-width:950px){
     .mobileMode h1{
@@ -72,15 +82,16 @@ header{
         margin-right: 10%;
     
     }
+    .normalmeny{
+        display: block;
+    }
     
 }
 
 /* end titel */
-@media(max-width:950px){
-    .normalmeny{
-    display: none;
-}
-}
+/* @media(max-width:950px){
+
+} */
 .normalmeny a{
     text-decoration: none;
     color: black;
@@ -88,9 +99,7 @@ header{
 }
 
 .normalmeny{
-    position: absolute;
-    top: 65px;
-    left: 25px;
+padding-top: 40px;
 
 }
 .normalmeny .MAN{

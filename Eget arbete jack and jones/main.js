@@ -1,16 +1,20 @@
 function myFunction() {
-  var element = document.getElementById("m1");
-  element.classList.toggle("m1");
+  document.querySelector("#m1").classList.toggle("m1");
 }
 function toggleJJXX() {
-  var element = document.getElementById("m2");
-  element.classList.toggle("m2");
+  document.querySelector("#m2").classList.toggle("m2");
 }
 function toggleHelp() {
-  var element = document.getElementById("m3");
-  element.classList.toggle("m3");
+  document.querySelector("#m3").classList.toggle("m3");
 }
 function toggleBestceller() {
-  var element = document.getElementById("m4");
-  element.classList.toggle("m4");
+  document.querySelector("#m4").classList.toggle("m4");
+}
+
+
+function toggleMenu() {
+  document.querySelector(".Meny950px").classList.toggle("visible")
+  document.querySelector(".normalmeny").classList.toggle("visible")
+  //document.querySelector(".menuButton").classList.toggle("hidden")
+
 }
