@@ -12,9 +12,11 @@ function toggleBestceller() {
 }
 
 
+
+
+
 function toggleMenu() {
-  document.querySelector(".Meny950px").classList.toggle("visible")
-  document.querySelector(".normalmeny").classList.toggle("visible")
-  //document.querySelector(".menuButton").classList.toggle("hidden")
+  document.querySelector(".headerMobile").classList.toggle("visible")
+
 
 }
