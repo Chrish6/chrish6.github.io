@@ -196,7 +196,20 @@ footer{
     border: 1px solid white;
     
 }
+.m1 .A1:hover{text-decoration: underline;}
+.m1 .A2:hover{text-decoration: underline;}
+.m1 .A3:hover{text-decoration: underline;}
+.m1 .A4:hover{text-decoration: underline;}
+.m1 .A5:hover{text-decoration: underline;}
+.m1 .A6:hover{text-decoration: underline;}
+.m1 .A7:hover{text-decoration: underline;}
+.m1 .A8:hover{text-decoration: underline;}
+.m1 .A9:hover{text-decoration: underline;}
+.m1 .A10:hover{text-decoration: underline;}
 
+.m2:hover{text-decoration: underline;}
+.m3:hover{text-decoration: underline;}
+.m4:hover{text-decoration: underline;}
 @media(min-width:950px){
     .headers{
     grid-template-columns: repeat(4,1fr);
@@ -208,7 +221,7 @@ footer{
     grid-template-columns: repeat(4,1fr);
     }
    
-   .border{
+    .border{
     display: none;
     }
     .hidden{ 
