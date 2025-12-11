@@ -1,18 +1,15 @@
 function myFunction() {
-  document.querySelector("#m1").classList.toggle("m1");
+  document.querySelector("#m1").classList.toggle("open");
 }
 function toggleJJXX() {
-  document.querySelector("#m2").classList.toggle("m2");
+  document.querySelector("#m2").classList.toggle("open");
 }
 function toggleHelp() {
-  document.querySelector("#m3").classList.toggle("m3");
+  document.querySelector("#m3").classList.toggle("open");
 }
 function toggleBestceller() {
-  document.querySelector("#m4").classList.toggle("m4");
+  document.querySelector("#m4").classList.toggle("open");
 }
-
-
-
 
 
 function toggleMenu() {

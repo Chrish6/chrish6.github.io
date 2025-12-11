@@ -1,5 +1,10 @@
 @import 'menu.css';
 
+/* ========== GLOBAL BASE ========== */
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 *{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-sizing: border-box;
@@ -11,30 +16,30 @@ body{
 }
 header, main, footer{
     border: 1px solid rgba(139, 139, 139, 0.295);
-    
 }
 main, footer{
     padding: 3%;
 }
-/* start top MESSAGE */
+
+/* ========== TOP MESSAGE ========== */
 .message{
     background-color: black;
     color: white;
     text-align: center;
 }
-/* SLUT top MESSAGE */
-/* START HEADER */
+
+/* ========== HEADER ========== */
 header{
     display: grid;
-
 }
-/* start titel */
+
+/* Logo */
 .mobileMode h1{
     text-align: center;
     align-self: center;
 }
 
-
+/* ===== menu mobile ===== */
 .Meny950px{
     display: none;
     font-weight: bold;
@@ -49,7 +54,7 @@ header{
 .Meny950px .PLUSSIZE:hover{text-decoration: underline;}
 .Meny950px .JUL:hover{text-decoration: underline;}
 
-
+/* Top menu MÄN / KVINNOR / BARN (mobile default) */
 .normalmeny{
     display: none;
     position: absolute;
@@ -63,6 +68,7 @@ header{
     display: block;
 }
 
+/* ===== menu >950px ===== */
 @media(min-width:950px){
     .mobileMode h1{
         font-size: 4rem;
@@ -82,18 +88,17 @@ header{
         place-items: center;
         margin-left: 10%;
         margin-right: 10%;
-    
+        color: black;
+    }
+    .Meny950px a{
+        color: black;
     }
     .normalmeny{
         display: block;
     }
-    
 }
 
-/* end titel */
-/* @media(max-width:950px){
-
-} */
+/* ===== top category menu styling ===== */
 .normalmeny a{
     text-decoration: none;
     color: black;
@@ -101,101 +106,82 @@ header{
 }
 
 .normalmeny{
-padding-top: 40px;
-
-}
-#mobilemode1 .MAN{
-    font-weight: bold;
-   
-}
-#mobilemode2 .women{
-    font-weight: bold;
-   
-}
-#mobilemode3 .JUNIOR{
-    font-weight: bold;
-   
-}
-.normalmeny .MAN:hover{
-
-    text-decoration: underline;
-}
-.normalmeny .WOMEN:hover{
-
-    text-decoration: underline;
-}
-.normalmeny .JUNIOR:hover{
-
-    text-decoration: underline;
+    padding-top: 40px;
 }
 
+#mobilemode1 .MAN{font-weight: bold;}
+#mobilemode2 .women{font-weight: bold;}
+#mobilemode3 .JUNIOR{font-weight: bold;}
+
+.normalmeny .MAN:hover{text-decoration: underline;}
+.normalmeny .WOMEN:hover{text-decoration: underline;}
+.normalmeny .JUNIOR:hover{text-decoration: underline;}
+
+/* Burger and icons */
 .mobilemode{
     align-items: center;
     place-items: center;
 }
 span{
     font-size: 30px;
-    line-height: 30px;;
+    line-height: 30px;
 }
 
 .menuButton{
     font-size: 35px;
     margin-left: 8px;
     position: absolute;
-}
-.bi{
-    font-size: 20px;
+    cursor: pointer;
 }
 
-
-/* SLUT HEADER */
-/* main start */
+/* ========== MAIN ========== */
 main{
     background-color: rgba(139, 139, 139, 0.295);
     min-height: 1000px;
 }
 
-/* main slut */
-/* START FOOTER */
+/* ========== FOOTER ========== */
 footer{
     background-color: black;
     color: white;
 }
+
 .headers{
     display: grid;
     font-weight: bold;
-    
 }
+
 .links .headers2{
     display: grid;
     font-weight: bold;
     font-size: medium;
 }
 
+/* footer mobile */
 .LINKS{ 
     display: grid;
     grid-template-rows: repeat(4,auto);    
     font-size: small;
-    }
+}
 
-.m1{
-    display: none;
-}
-.m2{
-    display: none;
-}
-.m3{
-    display: none;
-}
-.m4{
+/* keep them hidden by default */
+.m1, .m2, .m3, .m4 {
     display: none;
 }
 
-    
+/* show them with GRID when open */
+.m1.open, .m2.open, .m3.open, .m4.open {
+    display: grid;
+    grid-template-columns: 1fr; /* en kolumn = under varandra */
+    gap: 6px; /* valfritt mellanrum */
+}
+
 .border{
     border: 1px solid white;
-    
 }
+
+
+/* footer hover effects */
 .m1 .A1:hover{text-decoration: underline;}
 .m1 .A2:hover{text-decoration: underline;}
 .m1 .A3:hover{text-decoration: underline;}
@@ -207,26 +193,45 @@ footer{
 .m1 .A9:hover{text-decoration: underline;}
 .m1 .A10:hover{text-decoration: underline;}
 
-.A2:hover{text-decoration: underline;}
-.m3:hover{text-decoration: underline;}
-.m4:hover{text-decoration: underline;}
+.m2 .A1:hover{text-decoration: underline;}
+.m2 .A2:hover{text-decoration: underline;}
+.m2 .A3:hover{text-decoration: underline;}
+.m2 .A4:hover{text-decoration: underline;}
+.m2 .A5:hover{text-decoration: underline;}
+.m2 .A6:hover{text-decoration: underline;}
+
+.m3 .A1:hover{text-decoration: underline;}
+.m3 .A2:hover{text-decoration: underline;}
+.m3 .A3:hover{text-decoration: underline;}
+.m3 .A4:hover{text-decoration: underline;}
+.m3 .A5:hover{text-decoration: underline;}
+.m3 .A6:hover{text-decoration: underline;}
+.m3 .A7:hover{text-decoration: underline;}
+.m3 .A8:hover{text-decoration: underline;}
+.m3 .A9:hover{text-decoration: underline;}
+
+.m4 .A1:hover{text-decoration: underline;}
+.m4 .A2:hover{text-decoration: underline;}
+.m4 .A3:hover{text-decoration: underline;}
+
+
+/* ===== footer >950px ===== */
 @media(min-width:950px){
     .headers{
-    grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4,1fr);
     }
 
     .LINKS{ 
-    font-size: small;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+        font-size: small;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
     }
-   
-    .border{
-    display: none;
-    }
-    .hidden{ 
-    display: grid;
-    }   
-}    
-/* END FOOTER*/
 
+    .border{
+        display: none;
+    }
+
+    .hidden{
+        display: grid;
+    }
+}
