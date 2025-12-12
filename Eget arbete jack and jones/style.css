@@ -136,9 +136,196 @@ span{
 
 /* ========== MAIN ========== */
 main{
-    background-color: rgba(139, 139, 139, 0.295);
+    background-color: rgba(184, 184, 184, 0.274);
     min-height: 1000px;
 }
+.Tillbaka{
+    color: black;
+}
+.Tillbaka:hover{
+    text-decoration: underline;
+}
+/* ========== IMG =========== */
+.imgbox.köp{
+  display: grid;
+  grid-template-columns: repeat(6, 80vw);
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding: 5%;
+}
+
+.imgcontent{
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* själva bilden */
+.imgcontent img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Storlekar */
+.size-title{
+    font-size: smaller;
+}
+.size{
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgba(128, 128, 128, 0.466);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.size:hover{
+  border: 1px solid black;
+  transition: 1s;
+}
+
+.selected{
+  border: 1px solid black;
+}
+.sizes{
+  display: grid;
+  grid-template-columns: repeat(5, 45px);
+  gap: 5px;
+}
+/* köp knapp */
+.product-buttons{
+  display: grid;
+  grid-template-columns: 1fr 45px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.add-cart{
+  padding: 15px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.favorite{
+  width: 50px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.add-cart:hover{
+    color: black;
+    background: white;
+    transition: 0.5s;
+} 
+
+/* produktbeskrivning */
+.product-discription{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.product-titel{
+    margin-top: 30px;
+}
+@media (min-width: 770px) {
+
+  .product-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: top;
+    border: 1px solid red;
+  }
+
+  .imgbox.köp{
+  display: grid;
+  grid-template-columns: repeat(6, 50vw);
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  gap: 15px;
+  padding: 5%;
+}
+
+}
+
+/* ======== cards ======== */
+
+.cards{
+  display: grid;
+  gap: 5px;
+}
+@media(min-width: 550px){
+    .cards{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+@media(min-width: 770px){
+  .cards{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card{
+  display: grid;
+  padding: 0;          
+  overflow: hidden;    
+}
+
+
+.card .imgbox.köp{
+  display: grid;
+  grid-template-columns: repeat(6, 100%);
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory; 
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.card .imgcontent{
+  scroll-snap-align: center;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.card .imgcontent img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card-link{
+  text-decoration: none;
+  color: black;
+}
+
+
+/* CHAT-GPT */
+.card .imgbox.köp{
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.35) transparent;
+}
+
+.card:hover{
+    border: 1px solid black;
+    transition: 1s;
+}
+
+
 
 /* ========== FOOTER ========== */
 footer{
