@@ -3,10 +3,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-    />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
@@ -19,14 +15,28 @@
     </div>
     <header>
       <div class="normalmeny" id="mobilemode2">
-        <a class="MAN" href="./index.html">MÄN</a>
-        <a class="WOMEN" href="./Women.html">KVINNOR</a>
-        <a class="JUNIOR" href="./JUNIOR.html">BARN</a>
+        <div class="linkBox">
+          <a class="män link" href="./index.html">MÄN</a>
+          <div class="menyBorder"></div>
+        </div>
+
+        <div class="linkBox">
+          <a class="WOMEN link" href="./Women.html">KVINNOR</a>
+          <div class="menyBorder"></div>
+        </div>
+
+        <div class="linkBox">
+          <a class="JUNIOR link" href="./JUNIOR.html">BARN</a>
+          <div class="menyBorder"></div>
+        </div>
       </div>
       <div><span class="menuButton" onclick="toggleMenu()">&equiv;</span></div>
       <div class="mobileMode">
-        <div><h1>JJXX</h1></div>
+        <a href="./index.html">
+          <h1 class="mainloggo">JJXX</h1>
+        </a>
       </div>
+
       <div class="MenyIndent">
         <div class="Meny950px">
           <a class="NYHETER" href="nyheter.html">NYHETER</a>
@@ -42,7 +52,62 @@
       </div>
     </header>
 
-    <main></main>
+    <main class="index">
+      <div class="imgBox pic">
+        <a href="kläder.html"><img class="A" src="https://images.jackjones.com/p/media/jjxx-party-w49-w50-hero-row1-box1-sv-se.jpg?v=5716cd63d32b8f458930d1b9173a44cd&format=webp&width=2048&quality=80&key=1-1-3&bg-color=%23f5f5f5" alt=""></a>
+      </div>
+      <h1>LETAR DU EFTER</h1>
+      <P>NÅGOT ANNAT?</P>
+      <div class="cards index">
+      <a href="./kläder.html" class="card-link">
+          <div class="card">
+            <div class="imgbox pic2">
+              <div class="imgcontent">
+                <img
+                  src="https://images.jackjones.com/12243599/4313226/003/jackjones-jjiglennjjoriginalsq349noos-graa.jpg" alt=""/>
+              </div>
+            </div>
+            <p class="product-titel">MÄN</p>
+          </div>
+        </a>
+        <a href="./kläder.html" class="card-link">
+          <div class="card">
+            <div class="imgbox pic2">
+              <div class="imgcontent">
+                <img
+                  src="https://images.jackjones.com/12243599/4313226/003/jackjones-jjiglennjjoriginalsq349noos-graa.jpg" alt=""/>
+              </div>
+            </div>
+            <p class="product-titel">KVINNOR</p>
+          </div>
+        </a>
+        <a href="./kläder.html" class="card-link">
+          <div class="card">
+            <div class="imgbox pic2">
+              <div class="imgcontent">
+                <img
+                  src="https://images.jackjones.com/12243599/4313226/003/jackjones-jjiglennjjoriginalsq349noos-graa.jpg" alt=""/>
+              </div>
+            </div>
+            <p class="product-titel">BARN</p>
+          </div>
+        </a>
+        <a href="./kläder.html" class="card-link">
+          <div class="card">
+            <div class="imgbox pic2">
+              <div class="imgcontent">
+                <img
+                  src="https://images.jackjones.com/12243599/4313226/003/jackjones-jjiglennjjoriginalsq349noos-graa.jpg" alt=""/>
+              </div>
+            </div>
+            <p class="product-titel">PLUS SIZE</p>
+          </div>
+        </a>
+        </div>
+        <h3>JJXX SVERIGE</h3>
+        <P class="text">Välkommen till JACK & JONES - din perfekta destination för herrkläder, stil & självförtroende i vardagen. Sedan 1990 har vi skapat kläder som får dig att se snygg ut utan ansträngning. Vi har plaggen som passar din livsstil - oavsett din stil håller vi den genuin, bekväm och redo för allt, från vardagsjeans till enkla garderobsfavoriter</P>
+        <p class="text">Håll kontakten med JACK & JONES universum. Utforska hela vårt denimsortiment, hitta din nästa favoritpassform & och kolla in <a href="./JUNIOR.html">JACK & JONES Junior</a>, eller vårt systermärke <a href="./Women.html">JJXX</a>.</p>
+    </main>
 
     <footer>
       <div class="LINKS" id="LINKS">
@@ -115,9 +180,21 @@
     </footer>
     <header class="headerMobile">
       <div class="testTop" id="testTop2">
-        <a class="MAN" href="./index.html">MÄN</a>
-        <a class="WOMEN" href="./Women.html">KVINNOR</a>
-        <a class="JUNIOR" href="./JUNIOR.html">BARN</a>
+        <div class="linkBox">
+          <a class="MAN link" href="./index.html">MÄN</a>
+          <div class="menyBorder"></div>
+        </div>
+
+        <div class="linkBox">
+          <a class="WOMEN link" href="./Women.html">KVINNOR</a>
+          <div class="menyBorder"></div>
+        </div>
+
+        <div class="linkBox">
+          <a class="JUNIOR link" href="./JUNIOR.html">BARN</a>
+          <div class="menyBorder"></div>
+        </div>
+
         <span class="removeMenu" onclick="toggleMenu()">&times;</span>
       </div>
 
