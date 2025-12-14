@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.linkBox{
+  width:max-content;
+
+}
+
+.border{
+  width:0%;
+  height:2px;
+  background-color:black;
+  display:block;
+  transition:width 1s;
+
+}
+
+/* ~ betyder att du vill påverka närmsta syskon med klassen .border*/
+.link:hover  ~ .border{
+  width:100%;
+}
+
+
+.normalmeny a {
+  text-decoration: none;
+  color: black;
+}
+
+.normalmeny {
+  padding-top: 40px;
+  
+}
+
+#mobilemode1 .män {
+  font-weight: bold;
+}
+#mobilemode2 .women {
+  font-weight: bold;
+}
+#mobilemode3 .JUNIOR {
+  font-weight: bold;
+}
+.normalmeny{
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 20px;
+  margin-left: 20px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="normalmeny" id="mobilemode1">
+  <div class="linkBox">
+    <a class="män link" href="./index.html">MÄN</a>
+    <div class="border"></div>
+  </div>
+  <div class="linkBox">
+    <a class="WOMEN link" href="./Women.html">KVINNOR</a>
+    <div class="border"></div>
+  </div>
+  <div class="linkBox">
+    <a class="JUNIOR link" href="./JUNIOR.html">BARN</a>
+    <div class="border"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -15,7 +15,7 @@ function toggleBestceller() {
 }
 
 function toggleMenu() {
-  document.querySelector(".headerMobile").classList.toggle("visible")
+  document.querySelector(".headerMobile").classList.toggle("visible");
 }
 
 function toggleXS() {
@@ -37,3 +37,7 @@ function toggleL() {
 function toggleXL() {
   document.querySelector(".xl").classList.toggle("selected");
 }
+function toggleFAQ(id){
+  document.getElementById(id).classList.toggle("open");
+}
+
