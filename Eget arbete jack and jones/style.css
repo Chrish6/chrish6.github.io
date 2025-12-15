@@ -1,6 +1,5 @@
 @import "menu.css";
 
-/* ========== GLOBAL BASE ========== */
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -39,7 +38,6 @@ header {
   display: grid;
 }
 
-/* Logo */
 .mobileMode h1 {
   text-align: center;
   align-self: center;
@@ -52,20 +50,19 @@ header {
   font-weight: bold;
 }
 
-/* ===== NORMALMENY (mobile default) ===== */
 .normalmeny {
-  display: none; /* behåller din toggle/tänk */
+  display: none; 
   position: absolute;
   padding-top: 40px;
 }
 
-/* menyns länkar */
+
 .normalmeny a {
   text-decoration: none;
   color: black;
 }
 
-/* underline-struktur i normalmeny */
+
 .linkBox {
   width: max-content;
   display: grid;
@@ -84,7 +81,6 @@ header {
   width: 100%;
 }
 
-/* aktiv kategori */
 #mobilemode1 .män {
   font-weight: bold;
 }
@@ -95,7 +91,6 @@ header {
   font-weight: bold;
 }
 
-/* ===== menu helpers ===== */
 .visible {
   left: 0px;
 }
@@ -133,9 +128,9 @@ header {
     color: black;
   }
 
-  /* normalmeny syns på desktop */
+
   .normalmeny {
-    display: grid; /* FIX: inte block, så din grid fungerar */
+    display: grid; 
     grid-template-columns: repeat(3, max-content);
     gap: 20px;
     margin-left: 20px;
@@ -248,12 +243,11 @@ main.index p.text a{
   
 }
 
-/* ========================== */
 /* ======== OM.HTML ========= */
 .OM h3, .OM p{
   padding: 10px;
 }
-/* ========================== */
+
 /* ======== FAQ.HTML ======== */
 .faq{
   display: none;
@@ -277,7 +271,7 @@ main.index p.text a{
   padding-bottom: 10px;
 }
 
-/* ======================== */
+
 
 
 
@@ -288,7 +282,7 @@ main.index p.text a{
   text-decoration: underline;
 }
 
-/* ========== IMG (product slider) ========== */
+/* ========== IMG ========== */
 .imgbox.köp {
   display: grid;
   grid-template-columns: repeat(6, 100%);
@@ -311,7 +305,7 @@ main.index p.text a{
   object-fit: cover;
 }
 
-/* Storlekar */
+
 .size-title {
   font-size: smaller;
 }
@@ -339,7 +333,7 @@ main.index p.text a{
   gap: 5px;
 }
 
-/* köp knapp */
+
 .product-buttons {
   display: grid;
   grid-template-columns: 1fr 45px;
@@ -369,7 +363,6 @@ main.index p.text a{
   transition: 0.5s;
 }
 
-/* produktbeskrivning */
 .product-discription {
   font-size: 1.2rem;
   font-weight: 600;
@@ -486,7 +479,6 @@ footer {
   border: 1px solid white;
 }
 
-/* footer hover effects */
 .m1 .A1:hover {
   text-decoration: underline;
 }
