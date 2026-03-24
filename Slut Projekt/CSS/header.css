@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --logo-small: 200px;
+  --logo-large: 300px;
+  --font-small: 15px;
+  --font-large: 20px;
+  --font-larger: 30px;
+
+
+
+
+}
+
+header {
+  background-color: #ffffff;
+  margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.nav-top {
+  display: grid;
+  grid-template-columns: auto 60px;
+}
+.nav-links {
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+#navLinks a {
+  text-decoration: none;
+  color: black;
+  font-size: var(--font-large);
+  padding: 10px;
+  gap: 20px;
+  
+}
+#navLinks{
+    padding-top: 3%;
+    justify-self: center;
+}
+
+.logo {
+  width: var(--logo-small);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (min-width: 900px) {
+  .logo {
+    width: var(--logo-large);
+  }
+    .nav-links {
+        display: grid;
+        grid-template-rows:  repeat(8, auto);
+    }
+    .hamburger {
+        display: none;
+    }
+
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: var(--font-larger);
+}
+
+.hamburger:hover {
+  font-size: 35px;
+  transition: 0.2s ease-in-out;
+}
+
+
