@@ -6,12 +6,34 @@ function Header() {
     <header>
       <nav>
         <div className="nav-top">
-          <div className="logo">
-            <img src="../IMG/Logo.png" alt="OnWheels logotyp" />
+          <span className="menuButton" id="menuButton" onClick={toggleNav}>
+            <i className="fa-solid fa-bars"></i>
+          </span>
+          <div className="logo" href="#">
+            <img src="../IMG/Logo.png" alt="" />
           </div>
-            <span className="hamburger" id="hamburger" onClick={toggleNav}>
-              &equiv;
-           </span>
+          <div className="nav-search">
+            <input type="text" placeholder="Vad letar du efter?" />
+          </div>
+          <div className="nav-top-right">
+            <span className="mobile-search">
+              <i className="fa-solid fa-magnifying-glass"></i>
+            </span>
+            <div className="nav-actions">
+              <a href="#">
+                <i className="fa-solid fa-user"></i> Logga in
+              </a>
+              <a href="#">
+                <i className="fa-solid fa-circle-user"></i> Skapa konto
+              </a>
+              <a href="#">
+                <i className="fa-solid fa-location-dot"></i> Hitta butik
+              </a>
+            </div>
+            <a href="#" className="cart">
+              <i className="fa-solid fa-cart-shopping"></i> Kundvagn
+            </a>
+          </div>
         </div>
         <div className="nav-links" id="navLinks">
           <a href="#">Startsida</a>
