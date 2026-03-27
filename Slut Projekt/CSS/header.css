@@ -18,11 +18,12 @@ nav {
 .logo {
   width: var(--logo-small);
   cursor: pointer;
+  
 }
 
 .logo img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: contain;
 }
@@ -154,7 +155,7 @@ nav {
 
   .nav-links {
     display: grid;
-    grid-template-columns: repeat(8, auto);
+    grid-template-columns: repeat(9, auto);
     justify-content: start;
     border-top: 1px solid var(--border-color);
     padding: 0;
