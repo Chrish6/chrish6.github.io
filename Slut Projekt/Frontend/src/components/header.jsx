@@ -9,9 +9,9 @@ function Header() {
           <span className="menuButton" id="menuButton" onClick={toggleNav}>
             <i className="fa-solid fa-bars"></i>
           </span>
-          <div className="logo" href="/">
+          <a href="./"><div className="logo" >
             <img src="../IMG/Logo.png" alt="" />
-          </div>
+          </div></a>
           <div className="nav-search">
             <input type="text" placeholder="Vad letar du efter?" />
           </div>

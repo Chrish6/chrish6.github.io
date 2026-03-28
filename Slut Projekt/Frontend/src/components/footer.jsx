@@ -19,7 +19,7 @@ function Footer() {
             <a href="#">Cookiepolicy</a>
           </div>
         </div>
-
+        
         <div className="footer-kolumn">
           <h3 onClick={toggleMeny} id="tjänster">
             Tjänster <i className="fa-solid fa-angle-down"></i>
