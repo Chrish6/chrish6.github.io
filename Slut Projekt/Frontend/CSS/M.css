@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(21, auto);
     gap: 20px;
-    background-color: var(--bg-red);
+    background-color: black;
     color: aliceblue;
+    
 }

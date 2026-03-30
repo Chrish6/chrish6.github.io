@@ -1,0 +1,204 @@
+[
+  {
+    "id": "id_0001",
+    "artikelnummer": "ART-0001",
+    "namn": "Bromsskiva fram",
+    "beskrivning": "Högpresterande bromsskiva för framaxeln, passar de flesta europeiska bilmodeller.",
+    "kategori": "Bromsar",
+    "underkategori": "Bromsskivor",
+    "pris": 499,
+    "bilder": [
+      "bromsskiva-fram-1.png",
+      "bromsskiva-fram-2.png",
+      "bromsskiva-fram-3.png"
+    ],
+    "lager": {
+      "antal": 15,
+      "sektion": "A",
+      "rad": 2,
+      "hylla": 4,
+      "plats": "A-2-4"
+    }
+  },
+  {
+    "id": "id_0002",
+    "artikelnummer": "ART-0002",
+    "namn": "Bromsbelägg fram",
+    "beskrivning": "Bromsbelägg av hög kvalitet för framaxeln, lågt buller och lång livslängd.",
+    "kategori": "Bromsar",
+    "underkategori": "Bromsbelägg",
+    "pris": 349,
+    "bilder": [
+      "bromsbelagg-fram-1.png",
+      "bromsbelagg-fram-2.png"
+    ],
+    "lager": {
+      "antal": 20,
+      "sektion": "A",
+      "rad": 2,
+      "hylla": 5,
+      "plats": "A-2-5"
+    }
+  },
+  {
+    "id": "id_0003",
+    "artikelnummer": "ART-0003",
+    "namn": "Oljefilter",
+    "beskrivning": "Universalt oljefilter som passar de flesta bensin- och dieselmotorer.",
+    "kategori": "Motor",
+    "underkategori": "Filter",
+    "pris": 149,
+    "bilder": [
+      "oljefilter-1.png",
+      "oljefilter-2.png"
+    ],
+    "lager": {
+      "antal": 50,
+      "sektion": "B",
+      "rad": 1,
+      "hylla": 1,
+      "plats": "B-1-1"
+    }
+  },
+  {
+    "id": "id_0004",
+    "artikelnummer": "ART-0004",
+    "namn": "Luftfilter",
+    "beskrivning": "Högflödesluftfilter för bättre motorprestanda och bränsleekonomi.",
+    "kategori": "Motor",
+    "underkategori": "Filter",
+    "pris": 199,
+    "bilder": [
+      "luftfilter-1.png",
+      "luftfilter-2.png"
+    ],
+    "lager": {
+      "antal": 30,
+      "sektion": "B",
+      "rad": 1,
+      "hylla": 2,
+      "plats": "B-1-2"
+    }
+  },
+  {
+    "id": "id_0005",
+    "artikelnummer": "ART-0005",
+    "namn": "Tändstift",
+    "beskrivning": "Iridiumtändstift för jämn antändning och lång livslängd.",
+    "kategori": "Motor",
+    "underkategori": "Tändning",
+    "pris": 89,
+    "bilder": [
+      "tandstift-1.png",
+      "tandstift-2.png",
+      "tandstift-3.png"
+    ],
+    "lager": {
+      "antal": 100,
+      "sektion": "B",
+      "rad": 2,
+      "hylla": 1,
+      "plats": "B-2-1"
+    }
+  },
+  {
+    "id": "id_0006",
+    "artikelnummer": "ART-0006",
+    "namn": "Stötdämpare bak",
+    "beskrivning": "Gashydraulisk stötdämpare för bakaxeln, förbättrad körkomfort och stabilitet.",
+    "kategori": "Fjädring",
+    "underkategori": "Stötdämpare",
+    "pris": 899,
+    "bilder": [
+      "stotdampare-bak-1.png",
+      "stotdampare-bak-2.png"
+    ],
+    "lager": {
+      "antal": 8,
+      "sektion": "C",
+      "rad": 1,
+      "hylla": 1,
+      "plats": "C-1-1"
+    }
+  },
+  {
+    "id": "id_0007",
+    "artikelnummer": "ART-0007",
+    "namn": "Spiralfjäder fram",
+    "beskrivning": "Förstärkt spiralfjäder för framaxeln, passar sportiga körningar.",
+    "kategori": "Fjädring",
+    "underkategori": "Fjädrar",
+    "pris": 749,
+    "bilder": [
+      "spiralfjader-fram-1.png",
+      "spiralfjader-fram-2.png"
+    ],
+    "lager": {
+      "antal": 12,
+      "sektion": "C",
+      "rad": 1,
+      "hylla": 2,
+      "plats": "C-1-2"
+    }
+  },
+  {
+    "id": "id_0008",
+    "artikelnummer": "ART-0008",
+    "namn": "Lambdasond",
+    "beskrivning": "Syresensor för avgassystemet, förbättrar bränsleekonomi och minskar utsläpp.",
+    "kategori": "Avgassystem",
+    "underkategori": "Sensorer",
+    "pris": 599,
+    "bilder": [
+      "lambdasond-1.png",
+      "lambdasond-2.png"
+    ],
+    "lager": {
+      "antal": 10,
+      "sektion": "D",
+      "rad": 1,
+      "hylla": 1,
+      "plats": "D-1-1"
+    }
+  },
+  {
+    "id": "id_0009",
+    "artikelnummer": "ART-0009",
+    "namn": "Kylarvätska 5L",
+    "beskrivning": "Koncentrerad kylarvätska, skyddar mot frysning ner till -40°C.",
+    "kategori": "Kylsystem",
+    "underkategori": "Vätskor",
+    "pris": 249,
+    "bilder": [
+      "kylarvatska-1.png",
+      "kylarvatska-2.png"
+    ],
+    "lager": {
+      "antal": 40,
+      "sektion": "D",
+      "rad": 2,
+      "hylla": 1,
+      "plats": "D-2-1"
+    }
+  },
+  {
+    "id": "id_0010",
+    "artikelnummer": "ART-0010",
+    "namn": "Torkarblad fram",
+    "beskrivning": "Platt torkarblad med bra rengöringsförmåga i alla väderförhållanden.",
+    "kategori": "Karosseri",
+    "underkategori": "Torkare",
+    "pris": 179,
+    "bilder": [
+      "torkarblad-fram-1.png",
+      "torkarblad-fram-2.png"
+    ],
+    "lager": {
+      "antal": 35,
+      "sektion": "E",
+      "rad": 1,
+      "hylla": 1,
+      "plats": "E-1-1"
+    }
+  }
+]
