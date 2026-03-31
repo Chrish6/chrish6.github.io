@@ -7,18 +7,14 @@
     "kategori": "Bromsar",
     "underkategori": "Bromsskivor",
     "pris": 499,
-    "bilder": [
-      "bromsskiva-fram-1.png",
-      "bromsskiva-fram-2.png",
-      "bromsskiva-fram-3.png"
+    "bilder": ["bromsskiva-fram-1.png", "bromsskiva-fram-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "V70", "ar_fran": 2010, "ar_till": 2016 },
+      { "marke": "Volvo", "modell": "S60", "ar_fran": 2011, "ar_till": 2018 }
     ],
-    "lager": {
-      "antal": 15,
-      "sektion": "A",
-      "rad": 2,
-      "hylla": 4,
-      "plats": "A-2-4"
-    }
+    "alternativa_artikelnummer": ["BREMBO-001", "ATE-1234"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 15, "sektion": "A", "rad": 1, "hylla": 1, "plats": "A-1-1" }
   },
   {
     "id": "id_0002",
@@ -28,177 +24,1587 @@
     "kategori": "Bromsar",
     "underkategori": "Bromsbelägg",
     "pris": 349,
-    "bilder": [
-      "bromsbelagg-fram-1.png",
-      "bromsbelagg-fram-2.png"
+    "bilder": ["bromsbelagg-fram-1.png", "bromsbelagg-fram-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Golf", "ar_fran": 2013, "ar_till": 2020 },
+      { "marke": "Skoda", "modell": "Octavia", "ar_fran": 2014, "ar_till": 2021 }
     ],
-    "lager": {
-      "antal": 20,
-      "sektion": "A",
-      "rad": 2,
-      "hylla": 5,
-      "plats": "A-2-5"
-    }
+    "alternativa_artikelnummer": ["BOSCH-2345", "FERODO-5678"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 20, "sektion": "A", "rad": 1, "hylla": 2, "plats": "A-1-2" }
   },
   {
     "id": "id_0003",
     "artikelnummer": "ART-0003",
-    "namn": "Oljefilter",
-    "beskrivning": "Universalt oljefilter som passar de flesta bensin- och dieselmotorer.",
-    "kategori": "Motor",
-    "underkategori": "Filter",
-    "pris": 149,
-    "bilder": [
-      "oljefilter-1.png",
-      "oljefilter-2.png"
+    "namn": "Bromsskiva bak",
+    "beskrivning": "Bromsskiva för bakaxeln, ventilerad för bättre kylning.",
+    "kategori": "Bromsar",
+    "underkategori": "Bromsskivor",
+    "pris": 449,
+    "bilder": ["bromsskiva-bak-1.png", "bromsskiva-bak-2.png"],
+    "kompatibilitet": [
+      { "marke": "BMW", "modell": "3-serie", "ar_fran": 2012, "ar_till": 2019 },
+      { "marke": "BMW", "modell": "5-serie", "ar_fran": 2011, "ar_till": 2017 }
     ],
-    "lager": {
-      "antal": 50,
-      "sektion": "B",
-      "rad": 1,
-      "hylla": 1,
-      "plats": "B-1-1"
-    }
+    "alternativa_artikelnummer": ["BREMBO-003", "ATE-4567"],
+    "skick": { "skadad": true, "skadebeskrivning": "Mindre repor på ytan", "skadeplats": "Yttre kant", "godkand_for_forsaljning": true },
+    "lager": { "antal": 10, "sektion": "A", "rad": 1, "hylla": 3, "plats": "A-1-3" }
   },
   {
     "id": "id_0004",
     "artikelnummer": "ART-0004",
-    "namn": "Luftfilter",
-    "beskrivning": "Högflödesluftfilter för bättre motorprestanda och bränsleekonomi.",
-    "kategori": "Motor",
-    "underkategori": "Filter",
-    "pris": 199,
-    "bilder": [
-      "luftfilter-1.png",
-      "luftfilter-2.png"
+    "namn": "Bromsbelägg bak",
+    "beskrivning": "Bromsbelägg för bakaxeln med inbyggd slitageindikator.",
+    "kategori": "Bromsar",
+    "underkategori": "Bromsbelägg",
+    "pris": 299,
+    "bilder": ["bromsbelagg-bak-1.png"],
+    "kompatibilitet": [
+      { "marke": "Audi", "modell": "A4", "ar_fran": 2015, "ar_till": 2022 }
     ],
-    "lager": {
-      "antal": 30,
-      "sektion": "B",
-      "rad": 1,
-      "hylla": 2,
-      "plats": "B-1-2"
-    }
+    "alternativa_artikelnummer": ["BOSCH-6789"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 18, "sektion": "A", "rad": 1, "hylla": 4, "plats": "A-1-4" }
   },
   {
     "id": "id_0005",
     "artikelnummer": "ART-0005",
+    "namn": "Bromsoket fram",
+    "beskrivning": "Renoverat bromsoket för framaxeln, testat och godkänt.",
+    "kategori": "Bromsar",
+    "underkategori": "Bromsoket",
+    "pris": 799,
+    "bilder": ["bromsoket-fram-1.png", "bromsoket-fram-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "XC60", "ar_fran": 2010, "ar_till": 2017 }
+    ],
+    "alternativa_artikelnummer": ["ATE-7890"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 5, "sektion": "A", "rad": 2, "hylla": 1, "plats": "A-2-1" }
+  },
+  {
+    "id": "id_0006",
+    "artikelnummer": "ART-0006",
+    "namn": "Oljefilter",
+    "beskrivning": "Universalt oljefilter för bensin- och dieselmotorer.",
+    "kategori": "Motor",
+    "underkategori": "Filter",
+    "pris": 149,
+    "bilder": ["oljefilter-1.png", "oljefilter-2.png"],
+    "kompatibilitet": [
+      { "marke": "Toyota", "modell": "Corolla", "ar_fran": 2010, "ar_till": 2022 },
+      { "marke": "Honda", "modell": "Civic", "ar_fran": 2012, "ar_till": 2021 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-OIL-001", "MANN-001"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 50, "sektion": "B", "rad": 1, "hylla": 1, "plats": "B-1-1" }
+  },
+  {
+    "id": "id_0007",
+    "artikelnummer": "ART-0007",
+    "namn": "Luftfilter",
+    "beskrivning": "Högflödesluftfilter för bättre motorprestanda.",
+    "kategori": "Motor",
+    "underkategori": "Filter",
+    "pris": 199,
+    "bilder": ["luftfilter-1.png"],
+    "kompatibilitet": [
+      { "marke": "Ford", "modell": "Focus", "ar_fran": 2011, "ar_till": 2018 },
+      { "marke": "Ford", "modell": "Fiesta", "ar_fran": 2010, "ar_till": 2017 }
+    ],
+    "alternativa_artikelnummer": ["MANN-AIR-002", "K&N-33-2945"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 30, "sektion": "B", "rad": 1, "hylla": 2, "plats": "B-1-2" }
+  },
+  {
+    "id": "id_0008",
+    "artikelnummer": "ART-0008",
+    "namn": "Bränslefilter",
+    "beskrivning": "Bränslefilter för insprutningssystem, förhindrar smuts i motorn.",
+    "kategori": "Motor",
+    "underkategori": "Filter",
+    "pris": 179,
+    "bilder": ["branslefilter-1.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Passat", "ar_fran": 2010, "ar_till": 2015 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-FUEL-003"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 25, "sektion": "B", "rad": 1, "hylla": 3, "plats": "B-1-3" }
+  },
+  {
+    "id": "id_0009",
+    "artikelnummer": "ART-0009",
     "namn": "Tändstift",
     "beskrivning": "Iridiumtändstift för jämn antändning och lång livslängd.",
     "kategori": "Motor",
     "underkategori": "Tändning",
     "pris": 89,
-    "bilder": [
-      "tandstift-1.png",
-      "tandstift-2.png",
-      "tandstift-3.png"
+    "bilder": ["tandstift-1.png", "tandstift-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Golf", "ar_fran": 2015, "ar_till": 2020 },
+      { "marke": "Audi", "modell": "A3", "ar_fran": 2014, "ar_till": 2019 }
     ],
-    "lager": {
-      "antal": 100,
-      "sektion": "B",
-      "rad": 2,
-      "hylla": 1,
-      "plats": "B-2-1"
-    }
+    "alternativa_artikelnummer": ["NGK-12345", "BOSCH-98765", "DENSO-54321"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 100, "sektion": "B", "rad": 2, "hylla": 1, "plats": "B-2-1" }
   },
   {
-    "id": "id_0006",
-    "artikelnummer": "ART-0006",
+    "id": "id_0010",
+    "artikelnummer": "ART-0010",
+    "namn": "Tändkabel",
+    "beskrivning": "Högspänningständkabel för pålitlig tändning.",
+    "kategori": "Motor",
+    "underkategori": "Tändning",
+    "pris": 249,
+    "bilder": ["tandkabel-1.png"],
+    "kompatibilitet": [
+      { "marke": "Opel", "modell": "Astra", "ar_fran": 2010, "ar_till": 2015 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-KABEL-001"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 20, "sektion": "B", "rad": 2, "hylla": 2, "plats": "B-2-2" }
+  },
+  {
+    "id": "id_0011",
+    "artikelnummer": "ART-0011",
+    "namn": "Kamrem",
+    "beskrivning": "Kamrem av hög kvalitet, kritisk del för motorns timing.",
+    "kategori": "Motor",
+    "underkategori": "Rem",
+    "pris": 599,
+    "bilder": ["kamrem-1.png", "kamrem-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "V40", "ar_fran": 2012, "ar_till": 2019 },
+      { "marke": "Ford", "modell": "Mondeo", "ar_fran": 2010, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": ["GATES-K015649XS", "DAYCO-KTB675"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 12, "sektion": "B", "rad": 3, "hylla": 1, "plats": "B-3-1" }
+  },
+  {
+    "id": "id_0012",
+    "artikelnummer": "ART-0012",
+    "namn": "Drivrem",
+    "beskrivning": "Drivrem för generator och luftkonditionering.",
+    "kategori": "Motor",
+    "underkategori": "Rem",
+    "pris": 299,
+    "bilder": ["drivrem-1.png"],
+    "kompatibilitet": [
+      { "marke": "Toyota", "modell": "Avensis", "ar_fran": 2009, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["GATES-6PK1548"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 18, "sektion": "B", "rad": 3, "hylla": 2, "plats": "B-3-2" }
+  },
+  {
+    "id": "id_0013",
+    "artikelnummer": "ART-0013",
+    "namn": "Stötdämpare fram",
+    "beskrivning": "Gashydraulisk stötdämpare för framaxeln.",
+    "kategori": "Fjädring",
+    "underkategori": "Stötdämpare",
+    "pris": 949,
+    "bilder": ["stotdampare-fram-1.png", "stotdampare-fram-2.png"],
+    "kompatibilitet": [
+      { "marke": "BMW", "modell": "1-serie", "ar_fran": 2011, "ar_till": 2019 }
+    ],
+    "alternativa_artikelnummer": ["MONROE-G8070", "SACHS-312-041"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 8, "sektion": "C", "rad": 1, "hylla": 1, "plats": "C-1-1" }
+  },
+  {
+    "id": "id_0014",
+    "artikelnummer": "ART-0014",
     "namn": "Stötdämpare bak",
-    "beskrivning": "Gashydraulisk stötdämpare för bakaxeln, förbättrad körkomfort och stabilitet.",
+    "beskrivning": "Gashydraulisk stötdämpare för bakaxeln.",
     "kategori": "Fjädring",
     "underkategori": "Stötdämpare",
     "pris": 899,
-    "bilder": [
-      "stotdampare-bak-1.png",
-      "stotdampare-bak-2.png"
+    "bilder": ["stotdampare-bak-1.png"],
+    "kompatibilitet": [
+      { "marke": "Mercedes", "modell": "C-klass", "ar_fran": 2014, "ar_till": 2021 }
     ],
-    "lager": {
-      "antal": 8,
-      "sektion": "C",
-      "rad": 1,
-      "hylla": 1,
-      "plats": "C-1-1"
-    }
+    "alternativa_artikelnummer": ["MONROE-G8071", "BILSTEIN-24-143535"],
+    "skick": { "skadad": true, "skadebeskrivning": "Litet oljespill vid övre fästet", "skadeplats": "Övre fäste", "godkand_for_forsaljning": false },
+    "lager": { "antal": 3, "sektion": "C", "rad": 1, "hylla": 2, "plats": "C-1-2" }
   },
   {
-    "id": "id_0007",
-    "artikelnummer": "ART-0007",
+    "id": "id_0015",
+    "artikelnummer": "ART-0015",
     "namn": "Spiralfjäder fram",
-    "beskrivning": "Förstärkt spiralfjäder för framaxeln, passar sportiga körningar.",
+    "beskrivning": "Förstärkt spiralfjäder för framaxeln.",
     "kategori": "Fjädring",
     "underkategori": "Fjädrar",
     "pris": 749,
-    "bilder": [
-      "spiralfjader-fram-1.png",
-      "spiralfjader-fram-2.png"
+    "bilder": ["spiralfjader-fram-1.png"],
+    "kompatibilitet": [
+      { "marke": "Audi", "modell": "A6", "ar_fran": 2011, "ar_till": 2018 }
     ],
-    "lager": {
-      "antal": 12,
-      "sektion": "C",
-      "rad": 1,
-      "hylla": 2,
-      "plats": "C-1-2"
-    }
+    "alternativa_artikelnummer": ["EIBACH-E20-15-021-01-22"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 6, "sektion": "C", "rad": 2, "hylla": 1, "plats": "C-2-1" }
   },
   {
-    "id": "id_0008",
-    "artikelnummer": "ART-0008",
+    "id": "id_0016",
+    "artikelnummer": "ART-0016",
+    "namn": "Spiralfjäder bak",
+    "beskrivning": "Spiralfjäder för bakaxeln, standardhöjd.",
+    "kategori": "Fjädring",
+    "underkategori": "Fjädrar",
+    "pris": 649,
+    "bilder": ["spiralfjader-bak-1.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Passat", "ar_fran": 2011, "ar_till": 2019 }
+    ],
+    "alternativa_artikelnummer": ["EIBACH-E20-85-003-01-22"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 9, "sektion": "C", "rad": 2, "hylla": 2, "plats": "C-2-2" }
+  },
+  {
+    "id": "id_0017",
+    "artikelnummer": "ART-0017",
+    "namn": "Krängningshämmare fram",
+    "beskrivning": "Krängningshämmare för minskad karossrörelse i kurvor.",
+    "kategori": "Fjädring",
+    "underkategori": "Krängningshämmare",
+    "pris": 549,
+    "bilder": ["krangningshämmare-fram-1.png"],
+    "kompatibilitet": [
+      { "marke": "Ford", "modell": "Focus", "ar_fran": 2012, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["MEYLE-37-16-060-0017"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 7, "sektion": "C", "rad": 3, "hylla": 1, "plats": "C-3-1" }
+  },
+  {
+    "id": "id_0018",
+    "artikelnummer": "ART-0018",
+    "namn": "Styrled",
+    "beskrivning": "Styrled för precis styrning och bra vägkontakt.",
+    "kategori": "Styrning",
+    "underkategori": "Styrled",
+    "pris": 399,
+    "bilder": ["styrled-1.png", "styrled-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "S80", "ar_fran": 2010, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["LEMFORDER-37916-01"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 14, "sektion": "C", "rad": 3, "hylla": 2, "plats": "C-3-2" }
+  },
+  {
+    "id": "id_0019",
+    "artikelnummer": "ART-0019",
+    "namn": "Styrstag",
+    "beskrivning": "Styrstag för korrekt hjulinställning.",
+    "kategori": "Styrning",
+    "underkategori": "Styrstag",
+    "pris": 449,
+    "bilder": ["styrstag-1.png"],
+    "kompatibilitet": [
+      { "marke": "Opel", "modell": "Vectra", "ar_fran": 2009, "ar_till": 2015 }
+    ],
+    "alternativa_artikelnummer": ["MEYLE-316-030-0021"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 11, "sektion": "C", "rad": 4, "hylla": 1, "plats": "C-4-1" }
+  },
+  {
+    "id": "id_0020",
+    "artikelnummer": "ART-0020",
+    "namn": "Rattlås",
+    "beskrivning": "Elektroniskt rattlås, OEM-kvalitet.",
+    "kategori": "Styrning",
+    "underkategori": "Rattlås",
+    "pris": 1299,
+    "bilder": ["rattlas-1.png"],
+    "kompatibilitet": [
+      { "marke": "Renault", "modell": "Megane", "ar_fran": 2010, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["VALEO-251643"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 4, "sektion": "C", "rad": 4, "hylla": 2, "plats": "C-4-2" }
+  },
+  {
+    "id": "id_0021",
+    "artikelnummer": "ART-0021",
     "namn": "Lambdasond",
-    "beskrivning": "Syresensor för avgassystemet, förbättrar bränsleekonomi och minskar utsläpp.",
+    "beskrivning": "Syresensor för avgassystemet.",
     "kategori": "Avgassystem",
     "underkategori": "Sensorer",
     "pris": 599,
-    "bilder": [
-      "lambdasond-1.png",
-      "lambdasond-2.png"
+    "bilder": ["lambdasond-1.png"],
+    "kompatibilitet": [
+      { "marke": "Toyota", "modell": "Yaris", "ar_fran": 2011, "ar_till": 2020 }
     ],
-    "lager": {
-      "antal": 10,
-      "sektion": "D",
-      "rad": 1,
-      "hylla": 1,
-      "plats": "D-1-1"
-    }
+    "alternativa_artikelnummer": ["BOSCH-0-258-006-537"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 10, "sektion": "D", "rad": 1, "hylla": 1, "plats": "D-1-1" }
   },
   {
-    "id": "id_0009",
-    "artikelnummer": "ART-0009",
+    "id": "id_0022",
+    "artikelnummer": "ART-0022",
+    "namn": "Katalysator",
+    "beskrivning": "Katalysator för reducering av avgasutsläpp.",
+    "kategori": "Avgassystem",
+    "underkategori": "Katalysator",
+    "pris": 2499,
+    "bilder": ["katalysator-1.png", "katalysator-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Polo", "ar_fran": 2010, "ar_till": 2017 }
+    ],
+    "alternativa_artikelnummer": ["WALKER-20400"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 3, "sektion": "D", "rad": 1, "hylla": 2, "plats": "D-1-2" }
+  },
+  {
+    "id": "id_0023",
+    "artikelnummer": "ART-0023",
+    "namn": "Avgasrör",
+    "beskrivning": "Mittre avgasrör i rostfritt stål.",
+    "kategori": "Avgassystem",
+    "underkategori": "Avgasrör",
+    "pris": 899,
+    "bilder": ["avgasror-1.png"],
+    "kompatibilitet": [
+      { "marke": "Skoda", "modell": "Fabia", "ar_fran": 2010, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": ["WALKER-10789"],
+    "skick": { "skadad": true, "skadebeskrivning": "Mindre rost vid svetsfog", "skadeplats": "Bakre svetsfog", "godkand_for_forsaljning": true },
+    "lager": { "antal": 5, "sektion": "D", "rad": 2, "hylla": 1, "plats": "D-2-1" }
+  },
+  {
+    "id": "id_0024",
+    "artikelnummer": "ART-0024",
+    "namn": "Ljuddämpare",
+    "beskrivning": "Bakre ljuddämpare, passar originalmontage.",
+    "kategori": "Avgassystem",
+    "underkategori": "Ljuddämpare",
+    "pris": 1199,
+    "bilder": ["ljuddampare-1.png", "ljuddampare-2.png"],
+    "kompatibilitet": [
+      { "marke": "Seat", "modell": "Ibiza", "ar_fran": 2012, "ar_till": 2017 }
+    ],
+    "alternativa_artikelnummer": ["WALKER-23456"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 6, "sektion": "D", "rad": 2, "hylla": 2, "plats": "D-2-2" }
+  },
+  {
+    "id": "id_0025",
+    "artikelnummer": "ART-0025",
+    "namn": "Kylare",
+    "beskrivning": "Motorkylare i aluminium för effektiv kylning.",
+    "kategori": "Kylsystem",
+    "underkategori": "Kylare",
+    "pris": 1799,
+    "bilder": ["kylare-1.png", "kylare-2.png"],
+    "kompatibilitet": [
+      { "marke": "BMW", "modell": "5-serie", "ar_fran": 2010, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["NISSENS-60789", "VALEO-735469"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 4, "sektion": "E", "rad": 1, "hylla": 1, "plats": "E-1-1" }
+  },
+  {
+    "id": "id_0026",
+    "artikelnummer": "ART-0026",
     "namn": "Kylarvätska 5L",
     "beskrivning": "Koncentrerad kylarvätska, skyddar mot frysning ner till -40°C.",
     "kategori": "Kylsystem",
     "underkategori": "Vätskor",
     "pris": 249,
-    "bilder": [
-      "kylarvatska-1.png",
-      "kylarvatska-2.png"
+    "bilder": ["kylarvatska-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
     ],
-    "lager": {
-      "antal": 40,
-      "sektion": "D",
-      "rad": 2,
-      "hylla": 1,
-      "plats": "D-2-1"
-    }
+    "alternativa_artikelnummer": ["COMMA-XSTREAM-5L"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 40, "sektion": "E", "rad": 1, "hylla": 2, "plats": "E-1-2" }
   },
   {
-    "id": "id_0010",
-    "artikelnummer": "ART-0010",
+    "id": "id_0027",
+    "artikelnummer": "ART-0027",
+    "namn": "Termostat",
+    "beskrivning": "Motortermostat för korrekt driftstemperatur.",
+    "kategori": "Kylsystem",
+    "underkategori": "Termostat",
+    "pris": 349,
+    "bilder": ["termostat-1.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "V50", "ar_fran": 2010, "ar_till": 2012 }
+    ],
+    "alternativa_artikelnummer": ["GATES-TH48280G1"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 15, "sektion": "E", "rad": 2, "hylla": 1, "plats": "E-2-1" }
+  },
+  {
+    "id": "id_0028",
+    "artikelnummer": "ART-0028",
+    "namn": "Vattenpump",
+    "beskrivning": "Vattenpump för kylsystemet, OEM-kvalitet.",
+    "kategori": "Kylsystem",
+    "underkategori": "Pump",
+    "pris": 799,
+    "bilder": ["vattenpump-1.png", "vattenpump-2.png"],
+    "kompatibilitet": [
+      { "marke": "Audi", "modell": "A4", "ar_fran": 2012, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["GATES-WP0105", "AISIN-WVW-040"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 7, "sektion": "E", "rad": 2, "hylla": 2, "plats": "E-2-2" }
+  },
+  {
+    "id": "id_0029",
+    "artikelnummer": "ART-0029",
+    "namn": "Kylarfläkt",
+    "beskrivning": "Elektrisk kylarfläkt för extra kylning vid låg hastighet.",
+    "kategori": "Kylsystem",
+    "underkategori": "Fläkt",
+    "pris": 999,
+    "bilder": ["kylarflakt-1.png"],
+    "kompatibilitet": [
+      { "marke": "Peugeot", "modell": "308", "ar_fran": 2013, "ar_till": 2021 }
+    ],
+    "alternativa_artikelnummer": ["NISSENS-85784"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 5, "sektion": "E", "rad": 3, "hylla": 1, "plats": "E-3-1" }
+  },
+  {
+    "id": "id_0030",
+    "artikelnummer": "ART-0030",
+    "namn": "Generator",
+    "beskrivning": "Renoverad generator, testad och garanterad.",
+    "kategori": "Elsystem",
+    "underkategori": "Generator",
+    "pris": 1599,
+    "bilder": ["generator-1.png", "generator-2.png"],
+    "kompatibilitet": [
+      { "marke": "Mercedes", "modell": "E-klass", "ar_fran": 2010, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["VALEO-439522", "BOSCH-0-986-047-490"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 3, "sektion": "F", "rad": 1, "hylla": 1, "plats": "F-1-1" }
+  },
+  {
+    "id": "id_0031",
+    "artikelnummer": "ART-0031",
+    "namn": "Startmotor",
+    "beskrivning": "Renoverad startmotor, OEM-kvalitet.",
+    "kategori": "Elsystem",
+    "underkategori": "Startmotor",
+    "pris": 1399,
+    "bilder": ["startmotor-1.png"],
+    "kompatibilitet": [
+      { "marke": "Ford", "modell": "Transit", "ar_fran": 2010, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-001-107-503"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 4, "sektion": "F", "rad": 1, "hylla": 2, "plats": "F-1-2" }
+  },
+  {
+    "id": "id_0032",
+    "artikelnummer": "ART-0032",
+    "namn": "Batteri 60Ah",
+    "beskrivning": "Bilbatteri 60Ah, 540A kallstartsström.",
+    "kategori": "Elsystem",
+    "underkategori": "Batteri",
+    "pris": 899,
+    "bilder": ["batteri-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["VARTA-E11", "BOSCH-S4005"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 10, "sektion": "F", "rad": 2, "hylla": 1, "plats": "F-2-1" }
+  },
+  {
+    "id": "id_0033",
+    "artikelnummer": "ART-0033",
+    "namn": "Glödlampa H7",
+    "beskrivning": "Halogenlampa H7 55W för strålkastare.",
+    "kategori": "Elsystem",
+    "underkategori": "Lampor",
+    "pris": 79,
+    "bilder": ["glodlampa-h7-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla H7-modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["OSRAM-64210", "PHILIPS-12972PRC1"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 80, "sektion": "F", "rad": 2, "hylla": 2, "plats": "F-2-2" }
+  },
+  {
+    "id": "id_0034",
+    "artikelnummer": "ART-0034",
+    "namn": "Säkringsdosa",
+    "beskrivning": "Komplett säkringsdosa med relän.",
+    "kategori": "Elsystem",
+    "underkategori": "Säkringar",
+    "pris": 699,
+    "bilder": ["sakringsdosa-1.png", "sakringsdosa-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Golf", "ar_fran": 2009, "ar_till": 2012 }
+    ],
+    "alternativa_artikelnummer": ["VW-1K0-937-125-D"],
+    "skick": { "skadad": true, "skadebeskrivning": "Spricka i höljet", "skadeplats": "Locket", "godkand_for_forsaljning": true },
+    "lager": { "antal": 2, "sektion": "F", "rad": 3, "hylla": 1, "plats": "F-3-1" }
+  },
+  {
+    "id": "id_0035",
+    "artikelnummer": "ART-0035",
     "namn": "Torkarblad fram",
-    "beskrivning": "Platt torkarblad med bra rengöringsförmåga i alla väderförhållanden.",
+    "beskrivning": "Platt torkarblad med bra rengöringsförmåga.",
     "kategori": "Karosseri",
     "underkategori": "Torkare",
     "pris": 179,
-    "bilder": [
-      "torkarblad-fram-1.png",
-      "torkarblad-fram-2.png"
+    "bilder": ["torkarblad-fram-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "600mm", "ar_fran": 2000, "ar_till": 2024 }
     ],
-    "lager": {
-      "antal": 35,
-      "sektion": "E",
-      "rad": 1,
-      "hylla": 1,
-      "plats": "E-1-1"
-    }
+    "alternativa_artikelnummer": ["BOSCH-A402H", "VALEO-574330"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 35, "sektion": "G", "rad": 1, "hylla": 1, "plats": "G-1-1" }
+  },
+  {
+    "id": "id_0036",
+    "artikelnummer": "ART-0036",
+    "namn": "Bakluckehandtag",
+    "beskrivning": "Yttre handtag för baklucka, kromad.",
+    "kategori": "Karosseri",
+    "underkategori": "Handtag",
+    "pris": 349,
+    "bilder": ["bakluckehandtag-1.png", "bakluckehandtag-2.png"],
+    "kompatibilitet": [
+      { "marke": "Hyundai", "modell": "i30", "ar_fran": 2012, "ar_till": 2017 }
+    ],
+    "alternativa_artikelnummer": ["HYUNDAI-81260-A5010"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 8, "sektion": "G", "rad": 1, "hylla": 2, "plats": "G-1-2" }
+  },
+  {
+    "id": "id_0037",
+    "artikelnummer": "ART-0037",
+    "namn": "Dörrspegel vänster",
+    "beskrivning": "Elektrisk dörrspegel med uppvärmning, vänster sida.",
+    "kategori": "Karosseri",
+    "underkategori": "Speglar",
+    "pris": 799,
+    "bilder": ["dorrspegel-vanster-1.png", "dorrspegel-vanster-2.png"],
+    "kompatibilitet": [
+      { "marke": "Toyota", "modell": "Auris", "ar_fran": 2013, "ar_till": 2019 }
+    ],
+    "alternativa_artikelnummer": ["TOYOTA-87940-02E60"],
+    "skick": { "skadad": true, "skadebeskrivning": "Repor på spegelhuset", "skadeplats": "Yttre hölje", "godkand_for_forsaljning": true },
+    "lager": { "antal": 4, "sektion": "G", "rad": 2, "hylla": 1, "plats": "G-2-1" }
+  },
+  {
+    "id": "id_0038",
+    "artikelnummer": "ART-0038",
+    "namn": "Motorhuv",
+    "beskrivning": "Begagnad motorhuv i gott skick, grundlackerad.",
+    "kategori": "Karosseri",
+    "underkategori": "Karosspaneler",
+    "pris": 1499,
+    "bilder": ["motorhuv-1.png", "motorhuv-2.png", "motorhuv-3.png"],
+    "kompatibilitet": [
+      { "marke": "Ford", "modell": "Focus", "ar_fran": 2011, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 2, "sektion": "G", "rad": 3, "hylla": 1, "plats": "G-3-1" }
+  },
+  {
+    "id": "id_0039",
+    "artikelnummer": "ART-0039",
+    "namn": "Framskärm höger",
+    "beskrivning": "Begagnad framskärm höger, grundlackerad.",
+    "kategori": "Karosseri",
+    "underkategori": "Karosspaneler",
+    "pris": 1299,
+    "bilder": ["framskarml-hoger-1.png", "framskarml-hoger-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Golf", "ar_fran": 2013, "ar_till": 2017 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": true, "skadebeskrivning": "Buckla vid hjulhuset", "skadeplats": "Nedre kant vid hjulhus", "godkand_for_forsaljning": true },
+    "lager": { "antal": 1, "sektion": "G", "rad": 3, "hylla": 2, "plats": "G-3-2" }
+  },
+  {
+    "id": "id_0040",
+    "artikelnummer": "ART-0040",
+    "namn": "Vindrutetorkare motor",
+    "beskrivning": "Motor för vindrutetorkare, passar originalmontage.",
+    "kategori": "Karosseri",
+    "underkategori": "Torkare",
+    "pris": 649,
+    "bilder": ["torkarmotor-1.png"],
+    "kompatibilitet": [
+      { "marke": "Renault", "modell": "Clio", "ar_fran": 2010, "ar_till": 2019 }
+    ],
+    "alternativa_artikelnummer": ["VALEO-579702"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 6, "sektion": "G", "rad": 4, "hylla": 1, "plats": "G-4-1" }
+  },
+  {
+    "id": "id_0041",
+    "artikelnummer": "ART-0041",
+    "namn": "Kopplingspedal",
+    "beskrivning": "Kopplingspedal komplett med returfjäder.",
+    "kategori": "Transmission",
+    "underkategori": "Koppling",
+    "pris": 499,
+    "bilder": ["kopplingspedal-1.png"],
+    "kompatibilitet": [
+      { "marke": "Peugeot", "modell": "207", "ar_fran": 2009, "ar_till": 2012 }
+    ],
+    "alternativa_artikelnummer": ["PEUGEOT-5005-HX"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 5, "sektion": "H", "rad": 1, "hylla": 1, "plats": "H-1-1" }
+  },
+  {
+    "id": "id_0042",
+    "artikelnummer": "ART-0042",
+    "namn": "Kopplingssats",
+    "beskrivning": "Komplett kopplingssats med lamell, trycklager och svänghjul.",
+    "kategori": "Transmission",
+    "underkategori": "Koppling",
+    "pris": 2999,
+    "bilder": ["kopplingssats-1.png", "kopplingssats-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Golf", "ar_fran": 2010, "ar_till": 2015 }
+    ],
+    "alternativa_artikelnummer": ["LUK-600-0311-00", "SACHS-3000-951-806"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 4, "sektion": "H", "rad": 1, "hylla": 2, "plats": "H-1-2" }
+  },
+  {
+    "id": "id_0043",
+    "artikelnummer": "ART-0043",
+    "namn": "Växellåda manuell",
+    "beskrivning": "Begagnad manuell växellåda, 6-växlad, testad.",
+    "kategori": "Transmission",
+    "underkategori": "Växellåda",
+    "pris": 4999,
+    "bilder": ["vaxellada-1.png", "vaxellada-2.png"],
+    "kompatibilitet": [
+      { "marke": "BMW", "modell": "3-serie", "ar_fran": 2012, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 1, "sektion": "H", "rad": 2, "hylla": 1, "plats": "H-2-1" }
+  },
+  {
+    "id": "id_0044",
+    "artikelnummer": "ART-0044",
+    "namn": "Drivaxel höger",
+    "beskrivning": "Drivaxel höger fram, komplett med knutar.",
+    "kategori": "Transmission",
+    "underkategori": "Drivaxel",
+    "pris": 1499,
+    "bilder": ["drivaxel-hoger-1.png"],
+    "kompatibilitet": [
+      { "marke": "Audi", "modell": "A3", "ar_fran": 2013, "ar_till": 2020 }
+    ],
+    "alternativa_artikelnummer": ["GKN-305063"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 3, "sektion": "H", "rad": 2, "hylla": 2, "plats": "H-2-2" }
+  },
+  {
+    "id": "id_0045",
+    "artikelnummer": "ART-0045",
+    "namn": "Handbromsvajer",
+    "beskrivning": "Handbromsvajer bak, passar originalmontage.",
+    "kategori": "Bromsar",
+    "underkategori": "Handbroms",
+    "pris": 299,
+    "bilder": ["handbromsvajer-1.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "V60", "ar_fran": 2011, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["COFLE-10-9876"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 9, "sektion": "A", "rad": 3, "hylla": 1, "plats": "A-3-1" }
+  },
+  {
+    "id": "id_0046",
+    "artikelnummer": "ART-0046",
+    "namn": "ABS-sensor fram",
+    "beskrivning": "ABS-sensor för framhjul, magnetisk.",
+    "kategori": "Bromsar",
+    "underkategori": "ABS",
+    "pris": 349,
+    "bilder": ["abs-sensor-1.png"],
+    "kompatibilitet": [
+      { "marke": "Opel", "modell": "Insignia", "ar_fran": 2009, "ar_till": 2017 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-265-008-375"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 12, "sektion": "A", "rad": 3, "hylla": 2, "plats": "A-3-2" }
+  },
+  {
+    "id": "id_0047",
+    "artikelnummer": "ART-0047",
+    "namn": "Bromsslang fram",
+    "beskrivning": "Flexibel bromsslang för framaxeln.",
+    "kategori": "Bromsar",
+    "underkategori": "Bromsslangar",
+    "pris": 199,
+    "bilder": ["bromsslang-fram-1.png"],
+    "kompatibilitet": [
+      { "marke": "Honda", "modell": "Accord", "ar_fran": 2008, "ar_till": 2015 }
+    ],
+    "alternativa_artikelnummer": ["GOODRIDGE-25001"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 16, "sektion": "A", "rad": 4, "hylla": 1, "plats": "A-4-1" }
+  },
+  {
+    "id": "id_0048",
+    "artikelnummer": "ART-0048",
+    "namn": "Bromsvätska 500ml",
+    "beskrivning": "DOT 4 bromsvätska för hydrauliska bromssystem.",
+    "kategori": "Bromsar",
+    "underkategori": "Vätskor",
+    "pris": 89,
+    "bilder": ["bromsvatska-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-DOT4-500", "COMMA-DOT4-500ML"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 60, "sektion": "A", "rad": 4, "hylla": 2, "plats": "A-4-2" }
+  },
+  {
+    "id": "id_0049",
+    "artikelnummer": "ART-0049",
+    "namn": "Styrväxel",
+    "beskrivning": "Renoverad styrväxel med servostyrning.",
+    "kategori": "Styrning",
+    "underkategori": "Styrväxel",
+    "pris": 3499,
+    "bilder": ["styrväxel-1.png", "styrväxel-2.png"],
+    "kompatibilitet": [
+      { "marke": "Ford", "modell": "Mondeo", "ar_fran": 2011, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": ["TRW-JRM-1234"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 2, "sektion": "C", "rad": 5, "hylla": 1, "plats": "C-5-1" }
+  },
+  {
+    "id": "id_0050",
+    "artikelnummer": "ART-0050",
+    "namn": "Servopump",
+    "beskrivning": "Hydraulisk servopump för lätt styrning.",
+    "kategori": "Styrning",
+    "underkategori": "Servopump",
+    "pris": 1299,
+    "bilder": ["servopump-1.png"],
+    "kompatibilitet": [
+      { "marke": "Mercedes", "modell": "C-klass", "ar_fran": 2010, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-K-S01-000-427"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 3, "sektion": "C", "rad": 5, "hylla": 2, "plats": "C-5-2" }
+  },
+  {
+    "id": "id_0051",
+    "artikelnummer": "ART-0051",
+    "namn": "Insugsrör",
+    "beskrivning": "Insugsgrenrör för förbättrat luftflöde.",
+    "kategori": "Motor",
+    "underkategori": "Insugsystem",
+    "pris": 899,
+    "bilder": ["insugsror-1.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Touareg", "ar_fran": 2010, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["VW-03L-129-711-E"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 4, "sektion": "B", "rad": 4, "hylla": 1, "plats": "B-4-1" }
+  },
+  {
+    "id": "id_0052",
+    "artikelnummer": "ART-0052",
+    "namn": "EGR-ventil",
+    "beskrivning": "EGR-ventil för avgasåtercirkulation, minskar utsläpp.",
+    "kategori": "Motor",
+    "underkategori": "Avgasåtercirkulation",
+    "pris": 1199,
+    "bilder": ["egr-ventil-1.png", "egr-ventil-2.png"],
+    "kompatibilitet": [
+      { "marke": "Seat", "modell": "Leon", "ar_fran": 2012, "ar_till": 2020 }
+    ],
+    "alternativa_artikelnummer": ["WAHLER-7311D", "VALEO-700406"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 6, "sektion": "B", "rad": 4, "hylla": 2, "plats": "B-4-2" }
+  },
+  {
+    "id": "id_0053",
+    "artikelnummer": "ART-0053",
+    "namn": "Turbo",
+    "beskrivning": "Renoverad turbo, balanserad och testad.",
+    "kategori": "Motor",
+    "underkategori": "Turbo",
+    "pris": 5999,
+    "bilder": ["turbo-1.png", "turbo-2.png", "turbo-3.png"],
+    "kompatibilitet": [
+      { "marke": "Audi", "modell": "A4", "ar_fran": 2009, "ar_till": 2015 }
+    ],
+    "alternativa_artikelnummer": ["GARRETT-762060-5019S"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 2, "sektion": "B", "rad": 5, "hylla": 1, "plats": "B-5-1" }
+  },
+  {
+    "id": "id_0054",
+    "artikelnummer": "ART-0054",
+    "namn": "Intercooler",
+    "beskrivning": "Laddluftkylare för turbomotorer.",
+    "kategori": "Motor",
+    "underkategori": "Turbo",
+    "pris": 1799,
+    "bilder": ["intercooler-1.png"],
+    "kompatibilitet": [
+      { "marke": "BMW", "modell": "X5", "ar_fran": 2013, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["NISSENS-96862"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 3, "sektion": "B", "rad": 5, "hylla": 2, "plats": "B-5-2" }
+  },
+  {
+    "id": "id_0055",
+    "artikelnummer": "ART-0055",
+    "namn": "Bränslepump",
+    "beskrivning": "Elektrisk bränslepump för insprutningssystem.",
+    "kategori": "Bränslesystem",
+    "underkategori": "Pump",
+    "pris": 899,
+    "bilder": ["branslepump-1.png"],
+    "kompatibilitet": [
+      { "marke": "Toyota", "modell": "RAV4", "ar_fran": 2010, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-580-254-999"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 7, "sektion": "I", "rad": 1, "hylla": 1, "plats": "I-1-1" }
+  },
+  {
+    "id": "id_0056",
+    "artikelnummer": "ART-0056",
+    "namn": "Insprutare",
+    "beskrivning": "Bränsleinsprutare, rengjord och testad.",
+    "kategori": "Bränslesystem",
+    "underkategori": "Insprutare",
+    "pris": 699,
+    "bilder": ["insprutare-1.png", "insprutare-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "V70", "ar_fran": 2007, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-445-110-259"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 8, "sektion": "I", "rad": 1, "hylla": 2, "plats": "I-1-2" }
+  },
+  {
+    "id": "id_0057",
+    "artikelnummer": "ART-0057",
+    "namn": "Bränsletank",
+    "beskrivning": "Begagnad bränsletank i gott skick.",
+    "kategori": "Bränslesystem",
+    "underkategori": "Tank",
+    "pris": 1999,
+    "bilder": ["bransletank-1.png"],
+    "kompatibilitet": [
+      { "marke": "Ford", "modell": "Focus", "ar_fran": 2012, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 1, "sektion": "I", "rad": 2, "hylla": 1, "plats": "I-2-1" }
+  },
+  {
+    "id": "id_0058",
+    "artikelnummer": "ART-0058",
+    "namn": "Motorolja 5W-40 5L",
+    "beskrivning": "Helsyntetisk motorolja 5W-40, passar de flesta moderna motorer.",
+    "kategori": "Vätskor",
+    "underkategori": "Motorolja",
+    "pris": 399,
+    "bilder": ["motorolja-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["CASTROL-EDGE-5W40", "MOBIL1-5W40"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 45, "sektion": "I", "rad": 3, "hylla": 1, "plats": "I-3-1" }
+  },
+  {
+    "id": "id_0059",
+    "artikelnummer": "ART-0059",
+    "namn": "Växellådsolja 1L",
+    "beskrivning": "Syntetisk växellådsolja för manuella växellådor.",
+    "kategori": "Vätskor",
+    "underkategori": "Växellådsolja",
+    "pris": 149,
+    "bilder": ["vaxelladsoja-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Manuell växellåda", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["CASTROL-MTX-75W80"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 30, "sektion": "I", "rad": 3, "hylla": 2, "plats": "I-3-2" }
+  },
+  {
+    "id": "id_0060",
+    "artikelnummer": "ART-0060",
+    "namn": "Servoolja 1L",
+    "beskrivning": "Hydraulolja för servostyrningssystem.",
+    "kategori": "Vätskor",
+    "underkategori": "Servoolja",
+    "pris": 129,
+    "bilder": ["servoolja-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["COMMA-PSHF-1L"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 25, "sektion": "I", "rad": 4, "hylla": 1, "plats": "I-4-1" }
+  },
+  {
+    "id": "id_0061",
+    "artikelnummer": "ART-0061",
+    "namn": "Säkerhetsbälte fram",
+    "beskrivning": "Trepunktsbälte med bältessträckare, fram.",
+    "kategori": "Säkerhet",
+    "underkategori": "Säkerhetsbälte",
+    "pris": 999,
+    "bilder": ["sakerhetsbälte-1.png", "sakerhetsbälte-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "S60", "ar_fran": 2011, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 5, "sektion": "J", "rad": 1, "hylla": 1, "plats": "J-1-1" }
+  },
+  {
+    "id": "id_0062",
+    "artikelnummer": "ART-0062",
+    "namn": "Krockkudde ratt",
+    "beskrivning": "Förarkrockkudde komplett med gasgenerator.",
+    "kategori": "Säkerhet",
+    "underkategori": "Krockkudde",
+    "pris": 2499,
+    "bilder": ["krockkudde-ratt-1.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Golf", "ar_fran": 2013, "ar_till": 2019 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 2, "sektion": "J", "rad": 1, "hylla": 2, "plats": "J-1-2" }
+  },
+  {
+    "id": "id_0063",
+    "artikelnummer": "ART-0063",
+    "namn": "Instrumentbräda",
+    "beskrivning": "Begagnad instrumentbräda i gott skick.",
+    "kategori": "Interiör",
+    "underkategori": "Instrumentbräda",
+    "pris": 1999,
+    "bilder": ["instrumentbrada-1.png", "instrumentbrada-2.png"],
+    "kompatibilitet": [
+      { "marke": "BMW", "modell": "3-serie", "ar_fran": 2012, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 1, "sektion": "J", "rad": 2, "hylla": 1, "plats": "J-2-1" }
+  },
+  {
+    "id": "id_0064",
+    "artikelnummer": "ART-0064",
+    "namn": "Säte fram vänster",
+    "beskrivning": "Framsäte vänster med elreglage och uppvärmning.",
+    "kategori": "Interiör",
+    "underkategori": "Säten",
+    "pris": 3499,
+    "bilder": ["sate-fram-vanster-1.png", "sate-fram-vanster-2.png"],
+    "kompatibilitet": [
+      { "marke": "Audi", "modell": "A6", "ar_fran": 2012, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": true, "skadebeskrivning": "Liten fläck på sätesklädseln", "skadeplats": "Framsida sittdyna", "godkand_for_forsaljning": true },
+    "lager": { "antal": 1, "sektion": "J", "rad": 2, "hylla": 2, "plats": "J-2-2" }
+  },
+  {
+    "id": "id_0065",
+    "artikelnummer": "ART-0065",
+    "namn": "Rattcenter",
+    "beskrivning": "Rattcenter med knappar för ljud och telefon.",
+    "kategori": "Interiör",
+    "underkategori": "Ratt",
+    "pris": 799,
+    "bilder": ["rattcenter-1.png"],
+    "kompatibilitet": [
+      { "marke": "Mercedes", "modell": "C-klass", "ar_fran": 2014, "ar_till": 2021 }
+    ],
+    "alternativa_artikelnummer": ["MERCEDES-A2048680011"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 3, "sektion": "J", "rad": 3, "hylla": 1, "plats": "J-3-1" }
+  },
+  {
+    "id": "id_0066",
+    "artikelnummer": "ART-0066",
+    "namn": "Radio/stereo",
+    "beskrivning": "Fabriksradio med Bluetooth och USB.",
+    "kategori": "Interiör",
+    "underkategori": "Stereo",
+    "pris": 1199,
+    "bilder": ["radio-1.png", "radio-2.png"],
+    "kompatibilitet": [
+      { "marke": "Ford", "modell": "Focus", "ar_fran": 2011, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": ["FORD-AM5T-18C815-NA"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 4, "sektion": "J", "rad": 3, "hylla": 2, "plats": "J-3-2" }
+  },
+  {
+    "id": "id_0067",
+    "artikelnummer": "ART-0067",
+    "namn": "Bakljus höger",
+    "beskrivning": "Komplett bakljusenhet höger sida med LED.",
+    "kategori": "Belysning",
+    "underkategori": "Bakljus",
+    "pris": 899,
+    "bilder": ["bakljus-hoger-1.png", "bakljus-hoger-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "V40", "ar_fran": 2012, "ar_till": 2019 }
+    ],
+    "alternativa_artikelnummer": ["VOLVO-31395810"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 5, "sektion": "K", "rad": 1, "hylla": 1, "plats": "K-1-1" }
+  },
+  {
+    "id": "id_0068",
+    "artikelnummer": "ART-0068",
+    "namn": "Strålkastare vänster",
+    "beskrivning": "Strålkastare vänster med bi-xenon.",
+    "kategori": "Belysning",
+    "underkategori": "Strålkastare",
+    "pris": 2999,
+    "bilder": ["stralkastate-vanster-1.png", "stralkastate-vanster-2.png"],
+    "kompatibilitet": [
+      { "marke": "BMW", "modell": "5-serie", "ar_fran": 2010, "ar_till": 2013 }
+    ],
+    "alternativa_artikelnummer": ["BMW-63-11-7-270-713"],
+    "skick": { "skadad": true, "skadebeskrivning": "Repor på glaset", "skadeplats": "Strålkastarens glas", "godkand_for_forsaljning": true },
+    "lager": { "antal": 2, "sektion": "K", "rad": 1, "hylla": 2, "plats": "K-1-2" }
+  },
+  {
+    "id": "id_0069",
+    "artikelnummer": "ART-0069",
+    "namn": "Dimljus fram",
+    "beskrivning": "Dimljus fram vänster med LED.",
+    "kategori": "Belysning",
+    "underkategori": "Dimljus",
+    "pris": 499,
+    "bilder": ["dimljus-fram-1.png"],
+    "kompatibilitet": [
+      { "marke": "Peugeot", "modell": "3008", "ar_fran": 2013, "ar_till": 2020 }
+    ],
+    "alternativa_artikelnummer": ["VALEO-44843"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 7, "sektion": "K", "rad": 2, "hylla": 1, "plats": "K-2-1" }
+  },
+  {
+    "id": "id_0070",
+    "artikelnummer": "ART-0070",
+    "namn": "Innerbelysning",
+    "beskrivning": "LED-innerbelysningssats komplett.",
+    "kategori": "Belysning",
+    "underkategori": "Innerbelysning",
+    "pris": 299,
+    "bilder": ["innerbelysning-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 20, "sektion": "K", "rad": 2, "hylla": 2, "plats": "K-2-2" }
+  },
+  {
+    "id": "id_0071",
+    "artikelnummer": "ART-0071",
+    "namn": "Hjullager fram",
+    "beskrivning": "Komplett hjullagerkit för framaxeln.",
+    "kategori": "Hjul & Däck",
+    "underkategori": "Hjullager",
+    "pris": 699,
+    "bilder": ["hjullager-fram-1.png"],
+    "kompatibilitet": [
+      { "marke": "Skoda", "modell": "Superb", "ar_fran": 2010, "ar_till": 2019 }
+    ],
+    "alternativa_artikelnummer": ["SKF-VKBA3631", "FAG-713-6107-30"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 10, "sektion": "L", "rad": 1, "hylla": 1, "plats": "L-1-1" }
+  },
+  {
+    "id": "id_0072",
+    "artikelnummer": "ART-0072",
+    "namn": "Fälg 17 tum",
+    "beskrivning": "Aluminiumfälg 17 tum, 5x112 offset 45.",
+    "kategori": "Hjul & Däck",
+    "underkategori": "Fälgar",
+    "pris": 1299,
+    "bilder": ["falg-17-1.png", "falg-17-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Golf", "ar_fran": 2010, "ar_till": 2020 },
+      { "marke": "Audi", "modell": "A3", "ar_fran": 2010, "ar_till": 2020 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": true, "skadebeskrivning": "Repor på felgen", "skadeplats": "Yttre kant", "godkand_for_forsaljning": true },
+    "lager": { "antal": 4, "sektion": "L", "rad": 1, "hylla": 2, "plats": "L-1-2" }
+  },
+  {
+    "id": "id_0073",
+    "artikelnummer": "ART-0073",
+    "namn": "Vinterdäck 205/55 R16",
+    "beskrivning": "Begagnade vinterdäck, 6mm mönsterdjup.",
+    "kategori": "Hjul & Däck",
+    "underkategori": "Däck",
+    "pris": 599,
+    "bilder": ["vinterdack-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "205/55 R16", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 8, "sektion": "L", "rad": 2, "hylla": 1, "plats": "L-2-1" }
+  },
+  {
+    "id": "id_0074",
+    "artikelnummer": "ART-0074",
+    "namn": "Sommardäck 225/45 R17",
+    "beskrivning": "Begagnade sommardäck, 5mm mönsterdjup.",
+    "kategori": "Hjul & Däck",
+    "underkategori": "Däck",
+    "pris": 699,
+    "bilder": ["sommardack-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "225/45 R17", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 6, "sektion": "L", "rad": 2, "hylla": 2, "plats": "L-2-2" }
+  },
+  {
+    "id": "id_0075",
+    "artikelnummer": "ART-0075",
+    "namn": "Ventilkåpa",
+    "beskrivning": "Ventilkåpa i plast, tätningslist ingår.",
+    "kategori": "Motor",
+    "underkategori": "Motorblock",
+    "pris": 449,
+    "bilder": ["ventilkapa-1.png"],
+    "kompatibilitet": [
+      { "marke": "Renault", "modell": "Laguna", "ar_fran": 2008, "ar_till": 2015 }
+    ],
+    "alternativa_artikelnummer": ["ELRING-753-481"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 6, "sektion": "B", "rad": 6, "hylla": 1, "plats": "B-6-1" }
+  },
+  {
+    "id": "id_0076",
+    "artikelnummer": "ART-0076",
+    "namn": "Oljesump",
+    "beskrivning": "Oljesump med tätning, OEM-kvalitet.",
+    "kategori": "Motor",
+    "underkategori": "Motorblock",
+    "pris": 599,
+    "bilder": ["oljesump-1.png"],
+    "kompatibilitet": [
+      { "marke": "Opel", "modell": "Astra", "ar_fran": 2010, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["ELRING-011-791"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 5, "sektion": "B", "rad": 6, "hylla": 2, "plats": "B-6-2" }
+  },
+  {
+    "id": "id_0077",
+    "artikelnummer": "ART-0077",
+    "namn": "Trycksensor olja",
+    "beskrivning": "Oljetrycksgivare för motorskydd.",
+    "kategori": "Motor",
+    "underkategori": "Sensorer",
+    "pris": 199,
+    "bilder": ["trycksensor-olja-1.png"],
+    "kompatibilitet": [
+      { "marke": "Honda", "modell": "CR-V", "ar_fran": 2010, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-265-005-303"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 18, "sektion": "B", "rad": 7, "hylla": 1, "plats": "B-7-1" }
+  },
+  {
+    "id": "id_0078",
+    "artikelnummer": "ART-0078",
+    "namn": "Temperaturgivare",
+    "beskrivning": "Kylvätsketemperaturgivare för motorstyrning.",
+    "kategori": "Motor",
+    "underkategori": "Sensorer",
+    "pris": 179,
+    "bilder": ["temperaturgivare-1.png"],
+    "kompatibilitet": [
+      { "marke": "Toyota", "modell": "Camry", "ar_fran": 2012, "ar_till": 2017 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-280-130-093"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 22, "sektion": "B", "rad": 7, "hylla": 2, "plats": "B-7-2" }
+  },
+  {
+    "id": "id_0079",
+    "artikelnummer": "ART-0079",
+    "namn": "Vevaxelgivare",
+    "beskrivning": "Vevaxelpositionsgivare för motorstyrning.",
+    "kategori": "Motor",
+    "underkategori": "Sensorer",
+    "pris": 249,
+    "bilder": ["vevaxelgivare-1.png"],
+    "kompatibilitet": [
+      { "marke": "Mercedes", "modell": "A-klass", "ar_fran": 2013, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-281-002-898"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 14, "sektion": "B", "rad": 8, "hylla": 1, "plats": "B-8-1" }
+  },
+  {
+    "id": "id_0080",
+    "artikelnummer": "ART-0080",
+    "namn": "MAF-sensor",
+    "beskrivning": "Luftmassemätare för korrekt bränsleblandning.",
+    "kategori": "Motor",
+    "underkategori": "Sensorer",
+    "pris": 699,
+    "bilder": ["maf-sensor-1.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Tiguan", "ar_fran": 2011, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-280-218-067"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 9, "sektion": "B", "rad": 8, "hylla": 2, "plats": "B-8-2" }
+  },
+  {
+    "id": "id_0081",
+    "artikelnummer": "ART-0081",
+    "namn": "Kylarslang övre",
+    "beskrivning": "Övre kylarslang i gummi.",
+    "kategori": "Kylsystem",
+    "underkategori": "Slangar",
+    "pris": 149,
+    "bilder": ["kylarslang-ovre-1.png"],
+    "kompatibilitet": [
+      { "marke": "Ford", "modell": "Kuga", "ar_fran": 2013, "ar_till": 2019 }
+    ],
+    "alternativa_artikelnummer": ["GATES-05-3027"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 20, "sektion": "E", "rad": 4, "hylla": 1, "plats": "E-4-1" }
+  },
+  {
+    "id": "id_0082",
+    "artikelnummer": "ART-0082",
+    "namn": "Expansionskärl",
+    "beskrivning": "Expansionskärl för kylsystemet med lock.",
+    "kategori": "Kylsystem",
+    "underkategori": "Expansionskärl",
+    "pris": 249,
+    "bilder": ["expansionskärl-1.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "XC90", "ar_fran": 2010, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": ["NISSENS-996036"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 8, "sektion": "E", "rad": 4, "hylla": 2, "plats": "E-4-2" }
+  },
+  {
+    "id": "id_0083",
+    "artikelnummer": "ART-0083",
+    "namn": "Bakruta",
+    "beskrivning": "Bakruta med värmeelement och antenn.",
+    "kategori": "Karosseri",
+    "underkategori": "Glas",
+    "pris": 1499,
+    "bilder": ["bakruta-1.png"],
+    "kompatibilitet": [
+      { "marke": "Seat", "modell": "Leon", "ar_fran": 2013, "ar_till": 2020 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 2, "sektion": "G", "rad": 5, "hylla": 1, "plats": "G-5-1" }
+  },
+  {
+    "id": "id_0084",
+    "artikelnummer": "ART-0084",
+    "namn": "Vindruta",
+    "beskrivning": "Laminerad vindruta utan sprickor.",
+    "kategori": "Karosseri",
+    "underkategori": "Glas",
+    "pris": 1999,
+    "bilder": ["vindruta-1.png", "vindruta-2.png"],
+    "kompatibilitet": [
+      { "marke": "Renault", "modell": "Megane", "ar_fran": 2009, "ar_till": 2015 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": true, "skadebeskrivning": "Liten chip i nedre hörnet", "skadeplats": "Nedre vänster hörn", "godkand_for_forsaljning": true },
+    "lager": { "antal": 1, "sektion": "G", "rad": 5, "hylla": 2, "plats": "G-5-2" }
+  },
+  {
+    "id": "id_0085",
+    "artikelnummer": "ART-0085",
+    "namn": "Dörrfönsterhiss",
+    "beskrivning": "Elektrisk fönsterhiss för framdörr.",
+    "kategori": "Karosseri",
+    "underkategori": "Fönsterhiss",
+    "pris": 499,
+    "bilder": ["fonsterhiss-1.png"],
+    "kompatibilitet": [
+      { "marke": "Opel", "modell": "Corsa", "ar_fran": 2010, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": ["MEYLE-714-751-0008"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 7, "sektion": "G", "rad": 6, "hylla": 1, "plats": "G-6-1" }
+  },
+  {
+    "id": "id_0086",
+    "artikelnummer": "ART-0086",
+    "namn": "Dörrlås bak höger",
+    "beskrivning": "Elektriskt dörrlås med centrallåsfunktion.",
+    "kategori": "Karosseri",
+    "underkategori": "Lås",
+    "pris": 399,
+    "bilder": ["dorrlas-1.png"],
+    "kompatibilitet": [
+      { "marke": "Peugeot", "modell": "508", "ar_fran": 2011, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["VALEO-256946"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 6, "sektion": "G", "rad": 6, "hylla": 2, "plats": "G-6-2" }
+  },
+  {
+    "id": "id_0087",
+    "artikelnummer": "ART-0087",
+    "namn": "Motorstyrdon",
+    "beskrivning": "ECU motorstyrdon, programmerad.",
+    "kategori": "Elsystem",
+    "underkategori": "Styrdon",
+    "pris": 3999,
+    "bilder": ["motorstyrdon-1.png"],
+    "kompatibilitet": [
+      { "marke": "BMW", "modell": "3-serie", "ar_fran": 2010, "ar_till": 2015 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-281-020-087"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 1, "sektion": "F", "rad": 4, "hylla": 1, "plats": "F-4-1" }
+  },
+  {
+    "id": "id_0088",
+    "artikelnummer": "ART-0088",
+    "namn": "ABS-styrenhet",
+    "beskrivning": "ABS-styrenhet komplett med pump.",
+    "kategori": "Elsystem",
+    "underkategori": "Styrdon",
+    "pris": 2999,
+    "bilder": ["abs-styrenhet-1.png", "abs-styrenhet-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volkswagen", "modell": "Passat", "ar_fran": 2011, "ar_till": 2014 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-0-265-232-194"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 2, "sektion": "F", "rad": 4, "hylla": 2, "plats": "F-4-2" }
+  },
+  {
+    "id": "id_0089",
+    "artikelnummer": "ART-0089",
+    "namn": "Luftkonditioneringskompressor",
+    "beskrivning": "AC-kompressor renoverad och testad.",
+    "kategori": "Klimat",
+    "underkategori": "AC-kompressor",
+    "pris": 2499,
+    "bilder": ["ac-kompressor-1.png"],
+    "kompatibilitet": [
+      { "marke": "Mercedes", "modell": "E-klass", "ar_fran": 2010, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["DENSO-DCP17136"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 2, "sektion": "M", "rad": 1, "hylla": 1, "plats": "M-1-1" }
+  },
+  {
+    "id": "id_0090",
+    "artikelnummer": "ART-0090",
+    "namn": "Värmefläkt motor",
+    "beskrivning": "Motor för kupévärmefläkt.",
+    "kategori": "Klimat",
+    "underkategori": "Värmefläkt",
+    "pris": 599,
+    "bilder": ["varmefläkt-motor-1.png"],
+    "kompatibilitet": [
+      { "marke": "Audi", "modell": "A4", "ar_fran": 2009, "ar_till": 2016 }
+    ],
+    "alternativa_artikelnummer": ["VALEO-715049"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 5, "sektion": "M", "rad": 1, "hylla": 2, "plats": "M-1-2" }
+  },
+  {
+    "id": "id_0091",
+    "artikelnummer": "ART-0091",
+    "namn": "Kondensor AC",
+    "beskrivning": "Kondensor för luftkonditioneringssystem.",
+    "kategori": "Klimat",
+    "underkategori": "Kondensor",
+    "pris": 1299,
+    "bilder": ["kondensor-ac-1.png"],
+    "kompatibilitet": [
+      { "marke": "Ford", "modell": "C-Max", "ar_fran": 2011, "ar_till": 2019 }
+    ],
+    "alternativa_artikelnummer": ["NISSENS-940298"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 3, "sektion": "M", "rad": 2, "hylla": 1, "plats": "M-2-1" }
+  },
+  {
+    "id": "id_0092",
+    "artikelnummer": "ART-0092",
+    "namn": "Pollenfilter",
+    "beskrivning": "Aktivkols pollenfilter för AC-systemet.",
+    "kategori": "Klimat",
+    "underkategori": "Filter",
+    "pris": 149,
+    "bilder": ["pollenfilter-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["BOSCH-1-987-432-410", "MANN-CUK2141"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 50, "sektion": "M", "rad": 2, "hylla": 2, "plats": "M-2-2" }
+  },
+  {
+    "id": "id_0093",
+    "artikelnummer": "ART-0093",
+    "namn": "Dragkrok",
+    "beskrivning": "Avtagbar dragkrok med eluttag 13-poligt.",
+    "kategori": "Tillbehör",
+    "underkategori": "Dragkrok",
+    "pris": 1999,
+    "bilder": ["dragkrok-1.png", "dragkrok-2.png"],
+    "kompatibilitet": [
+      { "marke": "Volvo", "modell": "V60", "ar_fran": 2011, "ar_till": 2018 }
+    ],
+    "alternativa_artikelnummer": ["WESTFALIA-313-341"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 3, "sektion": "N", "rad": 1, "hylla": 1, "plats": "N-1-1" }
+  },
+  {
+    "id": "id_0094",
+    "artikelnummer": "ART-0094",
+    "namn": "Takräcke",
+    "beskrivning": "Universalt takräcke i aluminium.",
+    "kategori": "Tillbehör",
+    "underkategori": "Takräcke",
+    "pris": 899,
+    "bilder": ["takracke-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Med takrails", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["THULE-WingBar-EVO"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 5, "sektion": "N", "rad": 1, "hylla": 2, "plats": "N-1-2" }
+  },
+  {
+    "id": "id_0095",
+    "artikelnummer": "ART-0095",
+    "namn": "Parkeringssensor bak",
+    "beskrivning": "Ultraljudssensor för parkeringshjälp bak.",
+    "kategori": "Tillbehör",
+    "underkategori": "Sensorer",
+    "pris": 299,
+    "bilder": ["parkeringssensor-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["VALEO-632202"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 20, "sektion": "N", "rad": 2, "hylla": 1, "plats": "N-2-1" }
+  },
+  {
+    "id": "id_0096",
+    "artikelnummer": "ART-0096",
+    "namn": "Backkamera",
+    "beskrivning": "Backkamera med riktlinjer, HD.",
+    "kategori": "Tillbehör",
+    "underkategori": "Kamera",
+    "pris": 499,
+    "bilder": ["backkamera-1.png", "backkamera-2.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 10, "sektion": "N", "rad": 2, "hylla": 2, "plats": "N-2-2" }
+  },
+  {
+    "id": "id_0097",
+    "artikelnummer": "ART-0097",
+    "namn": "Motortvättmedel 5L",
+    "beskrivning": "Professionellt motortvättmedel, biologiskt nedbrytbart.",
+    "kategori": "Kemikalier",
+    "underkategori": "Rengöring",
+    "pris": 199,
+    "bilder": ["motortvattmedel-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 30, "sektion": "O", "rad": 1, "hylla": 1, "plats": "O-1-1" }
+  },
+  {
+    "id": "id_0098",
+    "artikelnummer": "ART-0098",
+    "namn": "Rostskyddsmedel spray",
+    "beskrivning": "Rostskyddsspray för underrede och dolhål.",
+    "kategori": "Kemikalier",
+    "underkategori": "Rostskydd",
+    "pris": 129,
+    "bilder": ["rostskyddsmedel-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["DINITROL-3125"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 40, "sektion": "O", "rad": 1, "hylla": 2, "plats": "O-1-2" }
+  },
+  {
+    "id": "id_0099",
+    "artikelnummer": "ART-0099",
+    "namn": "Lackrengöring 500ml",
+    "beskrivning": "Professionell lackrengöring, tar bort fett och damm.",
+    "kategori": "Kemikalier",
+    "underkategori": "Lackvård",
+    "pris": 149,
+    "bilder": ["lackrengoring-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Alla modeller", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": ["MEGUIARS-D10101"],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 25, "sektion": "O", "rad": 2, "hylla": 1, "plats": "O-2-1" }
+  },
+  {
+    "id": "id_0100",
+    "artikelnummer": "ART-0100",
+    "namn": "Lackpenna touchup",
+    "beskrivning": "Touchup-lackpenna för mindre repor, vit.",
+    "kategori": "Kemikalier",
+    "underkategori": "Lackvård",
+    "pris": 99,
+    "bilder": ["lackpenna-1.png"],
+    "kompatibilitet": [
+      { "marke": "Universell", "modell": "Vit lack", "ar_fran": 2000, "ar_till": 2024 }
+    ],
+    "alternativa_artikelnummer": [],
+    "skick": { "skadad": false, "skadebeskrivning": null, "skadeplats": null, "godkand_for_forsaljning": true },
+    "lager": { "antal": 35, "sektion": "O", "rad": 2, "hylla": 2, "plats": "O-2-2" }
   }
 ]

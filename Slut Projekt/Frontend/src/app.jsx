@@ -1,8 +1,6 @@
 const el = document.querySelector("#app");
 ReactDOM.createRoot(el).render(<App />);
 
-
-
 function App() {
   return (
     <div className="app">
@@ -10,6 +8,22 @@ function App() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function Products() {
   const [products, setProducts] = React.useState([]);
@@ -33,8 +47,16 @@ function Products() {
   );
 }
 
-
 function Prod({ prod }) {
+  const antal = prod.lager.antal;
+  const dotClass = antal === 0 ? "out" : antal <= 5 ? "low" : "";
+  const lagerText =
+    antal === 0
+      ? "Slutsåld"
+      : antal <= 5
+        ? `Lågt lager — ${antal} kvar`
+        : `I lager — ${antal} st`;
+
   return (
     <div className="card">
       <div className="imgbox">
@@ -43,9 +65,11 @@ function Prod({ prod }) {
       <div className="card-info">
         <p className="artikelnummer">{prod.artikelnummer}</p>
         <h2 className="namn">{prod.namn}</h2>
-        <p className="beskrivning">{prod.beskrivning}</p>
-        <p className="kategori">{prod.kategori} — {prod.underkategori}</p>
         <p className="pris">{prod.pris} kr</p>
+        <div className="lager-status">
+          <span className={`lager-dot ${dotClass}`}></span>
+          <span>{lagerText}</span>
+        </div>
       </div>
     </div>
   );

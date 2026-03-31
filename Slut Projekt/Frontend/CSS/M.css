@@ -1,8 +1,19 @@
-.Messegetop{
-    display: grid;
-    grid-template-columns: repeat(21, auto);
-    gap: 20px;
-    background-color: black;
-    color: aliceblue;
-    
+.Messegetop {
+  background-color: black;
+  color: aliceblue;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: var(--font-small);
+  padding: 6px 0;
+}
+
+.Messegetop-inner {
+  display: inline-flex;
+  gap: 40px;
+  animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
