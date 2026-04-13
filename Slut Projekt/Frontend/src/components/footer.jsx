@@ -1,5 +1,15 @@
 const el = document.querySelector("#footer");
 ReactDOM.createRoot(el).render(<Footer />);
+/* cloude hjälpte */
+function toggleMeny(e) {
+  const droppDown = e.currentTarget.nextElementSibling;
+  droppDown.classList.toggle("open");
+  e.currentTarget.querySelector("i").classList.toggle("open");
+}
+
+/* function toggleMeny(e) {
+  e.currentTarget.nextElementSibling.classList.toggle("open");
+} */
 
 function Footer() {
   return (
@@ -45,7 +55,7 @@ function Footer() {
             <a href="#">Reklamation & återköp</a>
             <a href="#">Teknisk support</a>
             <a href="#">Betalning</a>
-            <a href="#">Kontakta oss</a>
+            <a href="#kontakt"      onClick={(e) => navTo(e, "kontakt")}>Kontakta oss</a>
           </div>
         </div>
 
@@ -54,7 +64,7 @@ function Footer() {
             Om Onwheels <i className="fa-solid fa-angle-down"></i>
           </h3>
           <div className="droppDown">
-            <a href="#">Om oss</a>
+            <a href="#om-oss"      onClick={(e) => navTo(e, "om-oss")}>Om oss</a>
             <a href="#">Karriär</a>
             <a href="#">Hållbart val</a>
             <a href="#">Våra varumärken</a>
@@ -66,13 +76,3 @@ function Footer() {
     </footer>
   );
 }
-/* cloude hjälpte */
-function toggleMeny(e) {
-  const droppDown = e.currentTarget.nextElementSibling;
-  droppDown.classList.toggle("open");
-  e.currentTarget.querySelector("i").classList.toggle("open");
-}
-
-/* function toggleMeny(e) {
-  e.currentTarget.nextElementSibling.classList.toggle("open");
-} */

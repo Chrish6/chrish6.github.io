@@ -9,6 +9,17 @@ function navTo(e, path) {
   window.location.hash = path;
 }
 
+function handleSpecial(e) {
+  e.preventDefault();  // stoppa länk-händelsen
+  const target = e.target.dataset.target; // leta upp den riktiga #target som vi vill bli scrollad till
+
+  const targetElement = document.querySelector(target);  // Leta upp själva elementet
+  const rect = targetElement.getBoundingClientRect();  // få uppgifter om dess geometriska uppbyggnad
+
+  const y = rect.top; // Standard vertical coordinate
+  window.scrollTo(0, y);
+}
+
 function Header() {
   return (
     <header>
@@ -46,15 +57,33 @@ function Header() {
           </div>
         </div>
         <div className="nav-links" id="navLinks">
-          <a href="#reservdelar" onClick={(e) => navTo(e, "reservdelar")}>Reservdelar</a>
-          <a href="#lackering"   onClick={(e) => navTo(e, "lackering")}>Lackering</a>
-          <a href="#karosseri"   onClick={(e) => navTo(e, "karosseri")}>Karosseri</a>
-          <a href="#polering"    onClick={(e) => navTo(e, "polering")}>Polering</a>
-          <a href="#verktyg"     onClick={(e) => navTo(e, "verktyg")}>Verktyg</a>
-          <a href="#varumarken"  onClick={(e) => navTo(e, "varumarken")}>Varumärken</a>
-          <a href="#om-oss"      onClick={(e) => navTo(e, "om-oss")}>Om oss</a>
-          <a href="#kontakt"     onClick={(e) => navTo(e, "kontakt")}>Kontakta oss</a>
-          <a href="#tjänster">Tjänster</a>
+          <a href="#reservdelar" onClick={(e) => navTo(e, "reservdelar")}>
+            Reservdelar
+          </a>
+          <a href="#lackering" onClick={(e) => navTo(e, "lackering")}>
+            Lackering
+          </a>
+          <a href="#karosseri" onClick={(e) => navTo(e, "karosseri")}>
+            Karosseri
+          </a>
+          <a href="#polering" onClick={(e) => navTo(e, "polering")}>
+            Polering
+          </a>
+          <a href="#verktyg" onClick={(e) => navTo(e, "verktyg")}>
+            Verktyg
+          </a>
+          <a href="#varumarken" onClick={(e) => navTo(e, "varumarken")}>
+            Varumärken
+          </a>
+          <a href="#om-oss" onClick={(e) => navTo(e, "om-oss")}>
+            Om oss
+          </a>
+          <a href="#kontakt" onClick={(e) => navTo(e, "kontakt")}>
+            Kontakta oss
+          </a>
+          <a href="Kom och hjälp mig kalle anka" data-target="#tjänster" onClick={handleSpecial}>
+            Tjänster
+          </a>
         </div>
       </nav>
     </header>
