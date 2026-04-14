@@ -10,11 +10,11 @@ function navTo(e, path) {
 }
 
 function handleSpecial(e) {
-  e.preventDefault();  // stoppa länk-händelsen
+  e.preventDefault(); // stoppa länk-händelsen
   const target = e.target.dataset.target; // leta upp den riktiga #target som vi vill bli scrollad till
 
-  const targetElement = document.querySelector(target);  // Leta upp själva elementet
-  const rect = targetElement.getBoundingClientRect();  // få uppgifter om dess geometriska uppbyggnad
+  const targetElement = document.querySelector(target); // Leta upp själva elementet
+  const rect = targetElement.getBoundingClientRect(); // få uppgifter om dess geometriska uppbyggnad
 
   const y = rect.top; // Standard vertical coordinate
   window.scrollTo(0, y);
@@ -81,7 +81,11 @@ function Header() {
           <a href="#kontakt" onClick={(e) => navTo(e, "kontakt")}>
             Kontakta oss
           </a>
-          <a href="Kom och hjälp mig kalle anka" data-target="#tjänster" onClick={handleSpecial}>
+          <a
+            href="Kom och hjälp mig kalle anka"
+            data-target="#tjänster"
+            onClick={handleSpecial}
+          >
             Tjänster
           </a>
         </div>

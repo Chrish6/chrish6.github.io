@@ -1,5 +1,4 @@
-const el = document.querySelector("#app");
-ReactDOM.createRoot(el).render(<App />);
+ReactDOM.createRoot(document.querySelector("#app")).render(<App />);
 
 // ===================== ROUTER =====================
 
@@ -39,7 +38,6 @@ function App() {
   );
 }
 
-// ===================== PLATSHÅLLARSIDOR =====================
 function Hem() {
   return (
     <div className="hem">
@@ -49,16 +47,63 @@ function Hem() {
   );
 }
 function Reservdelar() {
+  const [products, setProducts] = React.useState([]);
+  React.useEffect(() => {
+    GetProducts();
+  }, []);
+  async function GetProducts() {
+    const res = await fetch("/Slut%20Projekt/data/products.json");
+    const data = await res.json();
+    setProducts(data);
+  }
   return (
     <div className="reservdelar">
       <h2>Reservdelar</h2>
-      <p>
-        Här kan du se våra reservdelar. Klicka på en produkt för mer
-        information.
-      </p>
+      <div className="reservdelar-lista">
+        {products.map((prod) => (
+          <Prod key={prod.artikelnummer} prod={prod} />
+        ))}
+      </div>
     </div>
   );
 }
+
+function Prod({ prod }) {
+  return (
+    <div className="reservdel">
+      <h3>{prod.namn}</h3>
+      <p>Art.nr: {prod.artikelnummer}</p>
+      <p>{prod.beskrivning}</p>
+      <p>
+        {prod.kategori} — {prod.underkategori}
+      </p>
+      <p>{prod.pris} kr</p>
+      <p>Antal i lager: {prod.lager.antal} st</p>
+      <p>
+        Plats: {prod.lager.plats} (Sektion {prod.lager.sektion}, Rad{" "}
+        {prod.lager.rad}, Hylla {prod.lager.hylla})
+      </p>
+      <p>
+        Skick:{" "}
+        {prod.skick.godkand_for_forsaljning
+          ? "Godkänd för försäljning"
+          : "Ej godkänd för försäljning"}
+      </p>
+      {prod.skick.skadad && (
+        <>
+          <p>⚠ Skadad</p>
+          {prod.skick.skadebeskrivning && (
+            <p>Skadebeskrivning: {prod.skick.skadebeskrivning}</p>
+          )}
+          {prod.skick.skadeplats && <p>Skadeplats: {prod.skick.skadeplats}</p>}
+        </>
+      )}
+      <p>Passar:</p>
+      
+    </div>
+  );
+}
+
 function Lackering() {
   return <h2>Lackering</h2>;
 }
@@ -80,7 +125,3 @@ function OmOss() {
 function Kontakt() {
   return <h2>Kontakta oss</h2>;
 }
-
-
-
-

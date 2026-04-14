@@ -13,10 +13,13 @@ function M() {
   return (
     <div className="Messegetop">
       <div className="Messegetop-inner">
-        {meddelanden.map((m, i) => <span key={i}>{m} &nbsp;•</span>)}
-        {meddelanden.map((m, i) => <span key={"b" + i}>{m} &nbsp;•</span>)}
+        {meddelanden.map((m, i) => (
+          <span key={i}>{m} &nbsp;•</span>
+        ))}
+        {meddelanden.map((m, i) => (
+          <span key={"b" + i}>{m} &nbsp;•</span>
+        ))}
       </div>
     </div>
   );
 }
-

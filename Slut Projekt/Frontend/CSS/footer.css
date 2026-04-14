@@ -1,9 +1,9 @@
-footer{
+footer {
   background-color: var(--bg-primary);
   border-top: 1px solid var(--border-color);
   /* padding: var(--padding-large); */
   display: grid;
-  
+
   gap: var(--padding-large);
 }
 
@@ -24,8 +24,8 @@ footer{
   grid-template-columns: 1fr auto;
 }
 .footer-kolumn h3 i {
-    margin: 5px;
-    transition: transform 0.3s ease;
+  margin: 5px;
+  transition: transform 0.3s ease;
 }
 .footer-kolumn a {
   color: var(--text-secondary);
@@ -36,30 +36,27 @@ footer{
   display: none;
   flex-direction: column;
   gap: 10px;
-  
 }
 
 .droppDown.open {
   display: flex;
 }
 
-
 h3 i.open {
   transform: rotate(180deg);
-  
 }
 
 @media (min-width: 600px) {
-  footer{
+  footer {
     grid-template-columns: 1fr 1fr;
   }
-  .droppDown{
+  .droppDown {
     display: grid;
   }
-  .footer-kolumn h3 i{
+  .footer-kolumn h3 i {
     display: none;
   }
-  .footer-kolumn{
+  .footer-kolumn {
     border-bottom: none;
   }
 }

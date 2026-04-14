@@ -18,7 +18,6 @@ nav {
 .logo {
   width: var(--logo-small);
   cursor: pointer;
-  
 }
 
 .logo img {
