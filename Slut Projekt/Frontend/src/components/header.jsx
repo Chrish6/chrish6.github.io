@@ -21,6 +21,28 @@ function handleSpecial(e) {
 }
 
 function Header() {
+  function contentSearch(ev) {
+    let s = ev.target.value.toLowerCase();
+    
+    const divs = document.querySelectorAll(".card");
+
+    divs.forEach((card) => {
+      card.classList.remove("hidden");
+
+      const titel = card.children[0].innerText;
+      const artikelnummer = card.children[1].innerText;
+      const beskrivning = card.children[2].innerText;
+
+      const result = titel.toLowerCase().search(s);
+      const result2 = artikelnummer.toLowerCase().search(s);
+      const result3 = beskrivning.toLowerCase().search(s);
+
+      if (result < 0 && result2 < 0 && result3 < 0) {
+        card.classList.add("hidden");
+      }
+    });
+  }
+
   return (
     <header>
       <nav>
@@ -34,7 +56,11 @@ function Header() {
             </div>
           </a>
           <div className="nav-search">
-            <input type="text" placeholder="Vad letar du efter?" />
+            <input
+              type="text"
+              onKeyUp={contentSearch}
+              placeholder="Vad letar du efter?"
+            />
           </div>
           <div className="nav-top-right">
             <span className="mobile-search">

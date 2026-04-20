@@ -59,7 +59,7 @@ function Reservdelar() {
   return (
     <div className="reservdelar">
       <h2>Reservdelar</h2>
-      <div className="reservdelar-lista">
+      <div className="cards">
         {products.map((prod) => (
           <Prod key={prod.artikelnummer} prod={prod} />
         ))}
@@ -70,7 +70,7 @@ function Reservdelar() {
 
 function Prod({ prod }) {
   return (
-    <div className="reservdel">
+    <div className="card">
       <h3>{prod.namn}</h3>
       <p>Art.nr: {prod.artikelnummer}</p>
       <p>{prod.beskrivning}</p>
