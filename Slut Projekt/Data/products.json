@@ -7,7 +7,7 @@
     "kategori": "Bromsar",
     "underkategori": "Bromsskivor",
     "pris": 499,
-    "bilder": ["bromsskiva-fram-1.png", "bromsskiva-fram-2.png"],
+    "bilder": "ladda ned.webp",
     "kompatibilitet": [
       { "marke": "Volvo", "modell": "V70", "ar_fran": 2010, "ar_till": 2016 },
       { "marke": "Volvo", "modell": "S60", "ar_fran": 2011, "ar_till": 2018 }

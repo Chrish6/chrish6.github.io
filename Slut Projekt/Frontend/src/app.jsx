@@ -41,7 +41,7 @@ function App() {
 function Hem() {
   return (
     <div className="hem">
-      <h1>Velkommen till vår webbplats</h1>
+      <h1>Välkommen till vår webbplats</h1>
       <p>Välj en kategori för att se våra produkter:</p>
     </div>
   );
@@ -69,37 +69,18 @@ function Reservdelar() {
 }
 
 function Prod({ prod }) {
+  const imgPrefix = "./Frontend/IMG/";
   return (
     <div className="card">
+      
+        <img src={imgPrefix + prod.bilder} alt={prod.namn} />
+      
       <h3>{prod.namn}</h3>
       <p>Art.nr: {prod.artikelnummer}</p>
       <p>{prod.beskrivning}</p>
-      <p>
-        {prod.kategori} — {prod.underkategori}
-      </p>
       <p>{prod.pris} kr</p>
       <p>Antal i lager: {prod.lager.antal} st</p>
-      <p>
-        Plats: {prod.lager.plats} (Sektion {prod.lager.sektion}, Rad{" "}
-        {prod.lager.rad}, Hylla {prod.lager.hylla})
-      </p>
-      <p>
-        Skick:{" "}
-        {prod.skick.godkand_for_forsaljning
-          ? "Godkänd för försäljning"
-          : "Ej godkänd för försäljning"}
-      </p>
-      {prod.skick.skadad && (
-        <>
-          <p>⚠ Skadad</p>
-          {prod.skick.skadebeskrivning && (
-            <p>Skadebeskrivning: {prod.skick.skadebeskrivning}</p>
-          )}
-          {prod.skick.skadeplats && <p>Skadeplats: {prod.skick.skadeplats}</p>}
-        </>
-      )}
-      <p>Passar:</p>
-      
+
     </div>
   );
 }

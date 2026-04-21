@@ -20,10 +20,16 @@ function handleSpecial(e) {
   window.scrollTo(0, y);
 }
 
+
+
+
 function Header() {
   function contentSearch(ev) {
     let s = ev.target.value.toLowerCase();
-    
+    if (window.location.hash !== "#reservdelar") {
+      window.location = "#reservdelar";
+    }
+
     const divs = document.querySelectorAll(".card");
 
     divs.forEach((card) => {
@@ -52,7 +58,7 @@ function Header() {
           </span>
           <a href="#hem" onClick={(e) => navTo(e, "hem")}>
             <div className="logo">
-              <img src="../IMG/Logo.png" alt="Onwheels logotyp" />
+              <img src="./Frontend/IMG/Logo.png" alt="Onwheels logotyp" />
             </div>
           </a>
           <div className="nav-search">
