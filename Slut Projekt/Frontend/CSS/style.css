@@ -64,12 +64,11 @@ body {
   overflow-x: hidden;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.hidden {
+  display: none;
 }
 
+/* reservdelar */
 .card {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
@@ -77,6 +76,45 @@ body {
   padding: var(--padding-medium);
 }
 
-.hidden {
-  display: none;
+.card h3 {
+  font-size: var(--font-medium);
+  color: var(--text-primary);
+  margin-bottom: var(--padding-small);
+}
+.card p {
+  font-size: var(--font-small);
+  color: var(--text-secondary);
+}
+.card .artikelnummer {
+  font-size: var(--font-small);
+  color: var(--text-muted);
+  margin-top: var(--padding-small);
+}
+.card .beskrivning {
+  font-size: var(--font-small);
+  color: var(--text-secondary);
+}
+.card .lager {
+  font-size: var(--font-small);
+  color: var(--text-muted);
+  margin-top: var(--padding-small);
+}
+.card .pris {
+  font-size: var(--font-large);
+  color: var(--text-primary);
+  margin-top: var(--padding-small);
+}
+.card .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--padding-medium);
+}
+.card .imgbox {
+  
+  overflow: hidden;
+}
+.card .imgbox img {
+  object-fit: cover;
+  
+  
 }

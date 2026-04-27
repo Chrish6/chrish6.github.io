@@ -72,14 +72,19 @@ function Prod({ prod }) {
   const imgPrefix = "./Frontend/IMG/";
   return (
     <div className="card">
-      
+      <div className="imgbox">
         <img src={imgPrefix + prod.bilder} alt={prod.namn} />
-      
+      </div>
+      <div className="grid">
+      <p className="artikelnummer">Art.nr: {prod.artikelnummer}</p>
       <h3>{prod.namn}</h3>
-      <p>Art.nr: {prod.artikelnummer}</p>
-      <p>{prod.beskrivning}</p>
-      <p>{prod.pris} kr</p>
-      <p>Antal i lager: {prod.lager.antal} st</p>
+      <p className="beskrivning">{prod.beskrivning}</p>
+      <p className="lager">Antal i lager: {prod.lager.antal} st</p>
+      </div>
+      <div className="grid">
+      
+      <p className="pris">{prod.pris} kr</p>
+     </div>
 
     </div>
   );
