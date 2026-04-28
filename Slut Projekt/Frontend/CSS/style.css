@@ -57,7 +57,7 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 body {
@@ -74,8 +74,16 @@ body {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   padding: var(--padding-medium);
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto auto;
+  
 }
-
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: var(--padding-medium);
+  margin: var(--padding-medium) ;
+}
 .card h3 {
   font-size: var(--font-medium);
   color: var(--text-primary);
@@ -93,6 +101,10 @@ body {
 .card .beskrivning {
   font-size: var(--font-small);
   color: var(--text-secondary);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .card .lager {
   font-size: var(--font-small);
@@ -104,17 +116,38 @@ body {
   color: var(--text-primary);
   margin-top: var(--padding-small);
 }
-.card .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: var(--padding-medium);
-}
+
 .card .imgbox {
-  
+  aspect-ratio: 1/1;
   overflow: hidden;
 }
 .card .imgbox img {
   object-fit: cover;
+  width: 100%;
   
-  
+}
+.card button {
+  background-color: rgba(255, 0, 0, 0.781);
+  color: #fff;
+  border: 1px solid transparent;
+  padding: var(--padding-small) var(--padding-medium);
+  font-size: var(--font-medium);
+  cursor: pointer;
+  margin-top: var(--padding-small);
+}
+
+.card button:hover {
+  background-color: rgb(255, 0, 0);
+  transition: 0.1s ease-out;
+  border: 1px solid black;  
+  transform: scale(1.05) ;
+}
+
+.more{
+  position: absolute;
+  width:100%;
+  min-height:100vh;
+  top:0;
+  left:0;
+  background-color: white;
 }

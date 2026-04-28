@@ -69,23 +69,41 @@ function Reservdelar() {
 }
 
 function Prod({ prod }) {
+  const [more, setMore] = React.useState(false);
+  function showMore() {
+    setMore((prev) => !prev);
+
+    document.querySelector("html").style.scrollBehavior = "unset";
+    window.scrollTo(0, 0);
+  }
   const imgPrefix = "./Frontend/IMG/";
   return (
     <div className="card">
       <div className="imgbox">
         <img src={imgPrefix + prod.bilder} alt={prod.namn} />
       </div>
-      <div className="grid">
       <p className="artikelnummer">Art.nr: {prod.artikelnummer}</p>
       <h3>{prod.namn}</h3>
       <p className="beskrivning">{prod.beskrivning}</p>
       <p className="lager">Antal i lager: {prod.lager.antal} st</p>
-      </div>
-      <div className="grid">
-      
       <p className="pris">{prod.pris} kr</p>
-     </div>
+      <button>KÖP</button>
+      <button onClick={showMore}>VISA MER</button>
+      {more ? (
+        <ShowMoreComp prod={prod} showMore={showMore}></ShowMoreComp>
+      ) : (
+        ""
+      )}
+    </div>
+  );
+}
 
+function ShowMoreComp({ prod, showMore }) {
+  return (
+    <div className="more">
+      <button onClick={showMore}>STÄNG</button>
+      <br />
+      {JSON.stringify(prod)}
     </div>
   );
 }
