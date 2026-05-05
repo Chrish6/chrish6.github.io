@@ -3,14 +3,14 @@
     "id": "id_0001",
     "artikelnummer": "ART-0001",
     "namn": "Bromsskiva fram",
-    "beskrivning": "Högpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller.",
+    "beskrivning": "Högpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller. bla bla bla bla Högpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller. bla bla bla blaHögpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller. bla bla bla blaHögpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller. bla bla bla blaHögpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller. bla bla bla blaHögpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller. bla bla bla blaHögpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller. bla bla bla blaHögpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller. bla bla bla blaHögpresterande bromsskiva och och och  för framaxeln, passar de flesta europeiska bilmodeller. bla bla bla blaHögpresterande ",
     "kategori": "Bromsar",
     "underkategori": "Bromsskivor",
     "pris": 499,
     "bilder": "ladda ned.webp",
     "kompatibilitet": [
-      { "marke": "Volvo", "modell": "V70", "ar_fran": 2010, "ar_till": 2016 },
-      { "marke": "Volvo", "modell": "S60", "ar_fran": 2011, "ar_till": 2018 }
+      { "marke": "Volvo", "modell": "V70", "år_fran": 2010, "år_till": 2016 },
+      { "marke": "Volvo", "modell": "S60", "år_fran": 2011, "år_till": 2018 }
     ],
     "alternativa_artikelnummer": ["BREMBO-001", "ATE-1234"],
     "skick": {
