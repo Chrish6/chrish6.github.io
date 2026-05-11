@@ -88,12 +88,14 @@ function Prod({ prod }) {
         <div className="imgbox">
           <img src={imgPrefix + prod.bilder} alt={prod.namn} />
         </div>
+        <div className="info">
         <p className="artikelnummer">Art.nr: {prod.artikelnummer}</p>
         <h3>{prod.namn}</h3>
         <p className="beskrivning">{prod.beskrivning}</p>
         <p className="lager">Antal i lager: {prod.lager.antal} st</p>
         <p className="pris">{prod.pris} kr</p>
         <button onClick={showMore}>KÖP</button>
+        </div>
       </div>
       {more ? (
         <ShowMoreComp prod={prod} closeMore={closeMore}></ShowMoreComp>
@@ -138,7 +140,7 @@ function ShowMoreComp({ prod, closeMore }) {
         <h3>Passar följande bilar</h3>
         {prod.kompatibilitet.map((k, i) => (
           <p key={i}>
-            {k.marke} {k.modell} — {k.ar_fran} till {k.ar_till}
+            {k.marke} {k.modell}
           </p>
         ))}
       </div>

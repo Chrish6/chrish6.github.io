@@ -1,15 +1,14 @@
 const el = document.querySelector("#footer");
 ReactDOM.createRoot(el).render(<Footer />);
-/* cloude hjälpte */
+
+
+
+
 function toggleMeny(e) {
   const droppDown = e.currentTarget.nextElementSibling;
   droppDown.classList.toggle("open");
   e.currentTarget.querySelector("i").classList.toggle("open");
 }
-
-/* function toggleMeny(e) {
-  e.currentTarget.nextElementSibling.classList.toggle("open");
-} */
 
 function Footer() {
   return (

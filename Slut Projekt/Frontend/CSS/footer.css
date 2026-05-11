@@ -3,8 +3,8 @@ footer {
   border-top: 1px solid var(--border-color);
   /* padding: var(--padding-large); */
   display: grid;
-
-  gap: var(--padding-large);
+  margin-top: 5px;
+  
 }
 
 .footer-kolumn {
@@ -13,13 +13,14 @@ footer {
   gap: 10px;
   border-bottom: 1px solid var(--border-color);
   padding: var(--padding-medium);
+  
 }
 
 .footer-kolumn h3 {
   color: var(--text-primary);
   font-size: var(--font-medium);
   font-weight: 500;
-  margin-top: var(--padding-medium);
+ 
   display: grid;
   grid-template-columns: 1fr auto;
 }
