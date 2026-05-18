@@ -122,6 +122,13 @@ function Header() {
           </a>
         </div>
       </nav>
+      <div className="mobile-search-input">
+        <input
+          type="text"
+          onKeyUp={contentSearch}
+          placeholder="Vad letar du efter?"
+        />
+      </div>
     </header>
   );
 }

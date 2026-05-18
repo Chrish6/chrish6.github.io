@@ -102,6 +102,24 @@ nav {
   padding: var(--padding-medium);
   border-bottom: 1px solid var(--border-color);
 }
+.mobile-search-input {
+    display: flex;
+    align-items: center;
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.mobile-search-input input {
+  border: none;
+  padding: 12px;
+  font-size: var(--font-small);
+  background: transparent;
+  width: 100%;
+  color: var(--text-dark);
+}
+
 
 @media (min-width: 480px) {
   .logo {
@@ -115,6 +133,7 @@ nav {
   .nav-links a {
     border-right: 1px solid var(--border-color);
   }
+  
 }
 
 @media (min-width: 900px) {
@@ -172,4 +191,9 @@ nav {
     text-decoration: none;
     font-size: var(--font-small);
   }
+  .mobile-search-input {
+  display: none;
+  padding: var(--padding-medium);
+
+}
 }
