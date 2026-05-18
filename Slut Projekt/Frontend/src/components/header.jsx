@@ -20,9 +20,6 @@ function handleSpecial(e) {
   window.scrollTo(0, y);
 }
 
-
-
-
 function Header() {
   function contentSearch(ev) {
     let s = ev.target.value.toLowerCase();
