@@ -65,10 +65,11 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
-/* reservdelar */
+
+
 
 .cards {
   display: grid;
