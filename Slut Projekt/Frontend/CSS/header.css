@@ -1,6 +1,10 @@
 header {
-  background-color: var(--bg-primary);
+  background-color: #fff;
   border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.06);
 }
 
 nav {
@@ -38,6 +42,7 @@ nav {
   background: transparent;
   width: 100%;
   color: var(--text-dark);
+  outline: none;
 }
 
 .mobile-search {
@@ -55,15 +60,30 @@ nav {
   color: var(--text-secondary);
   text-decoration: none;
   font-size: var(--font-small);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.18s;
+}
+
+.nav-actions a:hover {
+  color: var(--text-primary);
 }
 
 .menuButton {
   display: block;
   cursor: pointer;
-  font-size: calc(var(--font-medium) + 2px);
+  font-size: 22px;
   color: var(--text-primary);
   background: none;
   border: none;
+  padding: 4px;
+  border-radius: 6px;
+  transition: background 0.18s;
+}
+
+.menuButton:hover {
+  background: var(--bg-secondary);
 }
 
 .nav-top-right {
@@ -75,13 +95,18 @@ nav {
 
 .cart {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 6px;
   cursor: pointer;
   color: var(--text-primary);
   text-decoration: none;
   font-size: var(--font-medium);
+  font-weight: 600;
+  transition: color 0.18s;
+}
+
+.cart:hover {
+  color: var(--accent);
 }
 
 .nav-links {
@@ -101,45 +126,54 @@ nav {
   font-size: var(--font-small);
   padding: var(--padding-medium);
   border-bottom: 1px solid var(--border-color);
+  transition:
+    color 0.18s,
+    background 0.18s;
 }
+
+.nav-links a:hover {
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+}
+
 .mobile-search-input {
-    display: flex;
-    align-items: center;
-    background: var(--bg-light);
-    border-radius: var(--border-radius);
-    border: 1px solid var(--border-color);
-    overflow: hidden;
+  display: none;
+  align-items: center;
+  background: var(--bg-light);
+  border-top: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.mobile-search-input.open {
+  display: flex;
 }
 
 .mobile-search-input input {
   border: none;
-  padding: 12px;
+  padding: 12px var(--padding-medium);
   font-size: var(--font-small);
   background: transparent;
   width: 100%;
   color: var(--text-dark);
+  outline: none;
 }
-
 
 @media (min-width: 480px) {
   .logo {
     width: var(--logo-large);
   }
-
   .nav-links.open {
     grid-template-rows: auto;
   }
-
   .nav-links a {
     border-right: 1px solid var(--border-color);
   }
-  
 }
 
 @media (min-width: 900px) {
   .nav-top {
     grid-template-columns: auto 1fr auto auto;
-    padding: var(--padding-large);
+    padding: var(--padding-medium) var(--padding-large);
   }
 
   .logo {
@@ -151,9 +185,17 @@ nav {
     grid-template-columns: 1fr auto;
     align-items: center;
     background: var(--bg-light);
-    border-radius: var(--border-radius);
+    border-radius: 50px;
     border: 1px solid var(--border-color);
     overflow: hidden;
+    transition:
+      border-color 0.18s,
+      box-shadow 0.18s;
+  }
+
+  .nav-search:focus-within {
+    border-color: var(--text-primary);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
   }
 
   .mobile-search {
@@ -176,24 +218,32 @@ nav {
     grid-template-columns: repeat(9, auto);
     justify-content: start;
     border-top: 1px solid var(--border-color);
-    padding: 0;
-    padding-left: var(--padding-large);
+    padding: 0 var(--padding-large);
   }
 
   .nav-links a {
-    padding: 12px;
+    padding: 14px 12px;
     border-bottom: 2px solid transparent;
     border-right: none;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .nav-links a:hover {
+    color: var(--text-primary);
+    background: transparent;
+  }
+  .nav-links a:hover::after {
+    transform: scaleX(1);
   }
 
   .cart {
     color: var(--text-secondary);
-    text-decoration: none;
     font-size: var(--font-small);
+    font-weight: 500;
   }
-  .mobile-search-input {
-  display: none;
-  padding: var(--padding-medium);
 
-}
+  .mobile-search-input {
+    display: none !important;
+  }
 }

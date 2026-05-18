@@ -1,24 +1,28 @@
 const el = document.querySelector("#header");
 ReactDOM.createRoot(el).render(<Header />);
 
-// navTo() anropas när användaren klickar på en länk.
-// e.preventDefault() stoppar webbläsaren från att följa href:en på vanligt sätt.
-// Sedan sätter den hash i URL:en → App() fångar upp hashchange och byter sida.
+
+
+
+
 function navTo(e, path) {
   e.preventDefault();
   window.location.hash = path;
 }
 
-function handleSpecial(e) {
-  e.preventDefault(); // stoppa länk-händelsen
-  const target = e.target.dataset.target; // leta upp den riktiga #target som vi vill bli scrollad till
 
-  const targetElement = document.querySelector(target); // Leta upp själva elementet
-  const rect = targetElement.getBoundingClientRect(); // få uppgifter om dess geometriska uppbyggnad
 
-  const y = rect.top; // Standard vertical coordinate
-  window.scrollTo(0, y);
+
+
+
+function toggleNav() {
+  document.querySelector("#navLinks").classList.toggle("open");
 }
+
+function toggleSearch() {
+  document.querySelector(".mobile-search-input").classList.toggle("open");
+}
+
 
 
 
@@ -30,18 +34,22 @@ function Header() {
       window.location = "#reservdelar";
     }
 
-    const divs = document.querySelectorAll(".card");
 
+    const divs = document.querySelectorAll(".card");
     divs.forEach((card) => {
       card.classList.remove("hidden");
 
-      const titel = card.children[0].innerText;
-      const artikelnummer = card.children[1].innerText;
-      const beskrivning = card.children[2].innerText;
+
+
+      const titel = card.children[1].innerText;
+      const artikelnummer = card.children[2].innerText;
+      const beskrivning = card.children[3].innerText;
+
 
       const result = titel.toLowerCase().search(s);
       const result2 = artikelnummer.toLowerCase().search(s);
       const result3 = beskrivning.toLowerCase().search(s);
+
 
       if (result < 0 && result2 < 0 && result3 < 0) {
         card.classList.add("hidden");
@@ -69,7 +77,7 @@ function Header() {
             />
           </div>
           <div className="nav-top-right">
-            <span className="mobile-search">
+            <span className="mobile-search" onClick={toggleSearch}>
               <i className="fa-solid fa-magnifying-glass"></i>
             </span>
             <div className="nav-actions">
@@ -89,37 +97,15 @@ function Header() {
           </div>
         </div>
         <div className="nav-links" id="navLinks">
-          <a href="#reservdelar" onClick={(e) => navTo(e, "reservdelar")}>
-            Reservdelar
-          </a>
-          <a href="#lackering" onClick={(e) => navTo(e, "lackering")}>
-            Lackering
-          </a>
-          <a href="#karosseri" onClick={(e) => navTo(e, "karosseri")}>
-            Karosseri
-          </a>
-          <a href="#polering" onClick={(e) => navTo(e, "polering")}>
-            Polering
-          </a>
-          <a href="#verktyg" onClick={(e) => navTo(e, "verktyg")}>
-            Verktyg
-          </a>
-          <a href="#varumarken" onClick={(e) => navTo(e, "varumarken")}>
-            Varumärken
-          </a>
-          <a href="#om-oss" onClick={(e) => navTo(e, "om-oss")}>
-            Om oss
-          </a>
-          <a href="#kontakt" onClick={(e) => navTo(e, "kontakt")}>
-            Kontakta oss
-          </a>
-          <a
-            href="Kom och hjälp mig kalle anka"
-            data-target="#tjänster"
-            onClick={handleSpecial}
-          >
-            Tjänster
-          </a>
+          <a href="#reservdelar" onClick={(e) => navTo(e, "reservdelar")}>Reservdelar</a>
+          <a href="#lackering" onClick={(e) => navTo(e, "lackering")}>Lackering</a>
+          <a href="#karosseri" onClick={(e) => navTo(e, "karosseri")}>Karosseri</a>
+          <a href="#polering" onClick={(e) => navTo(e, "polering")}>Polering</a>
+          <a href="#verktyg" onClick={(e) => navTo(e, "verktyg")}>Verktyg</a>
+          <a href="#varumarken" onClick={(e) => navTo(e, "varumarken")}>Varumärken</a>
+          <a href="#om-oss" onClick={(e) => navTo(e, "om-oss")}>Om oss</a>
+          <a href="#kontakt" onClick={(e) => navTo(e, "kontakt")}>Kontakta oss</a>
+          <a href="#">Tjänster</a>
         </div>
       </nav>
       <div className="mobile-search-input">
@@ -131,9 +117,4 @@ function Header() {
       </div>
     </header>
   );
-}
-
-// toggleNav() öppnar/stänger mobilmenyn genom att toggla CSS-klassen "open"
-function toggleNav() {
-  document.querySelector("#navLinks").classList.toggle("open");
 }

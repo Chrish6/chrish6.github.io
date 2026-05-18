@@ -1,23 +1,26 @@
 .Messegetop {
-  background-color: black;
-  color: aliceblue;
+  background-color: #111;
+  color: rgba(255,255,255,0.85);
   overflow: hidden;
   white-space: nowrap;
-  font-size: var(--font-small);
-  padding: 6px 0;
+  font-size: 12px;
+  padding: 8px 0;
+  letter-spacing: 0.02em;
 }
 
 .Messegetop-inner {
   display: inline-flex;
-  gap: 40px;
-  animation: ticker 20s linear infinite;
+  gap: 56px;
+  animation: ticker 22s linear infinite;
 }
 
 @keyframes ticker {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.Messegetop-inner span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
