@@ -26,9 +26,17 @@ function toggleSearch() {
 
 
 
+function handleKeyDown(ev) {
+  if (ev.key === "Enter") {
+    toggleSearch();
+  }
+}
+
+
 
 function Header() {
   function contentSearch(ev) {
+    
     let s = ev.target.value.toLowerCase();
     if (window.location.hash !== "#reservdelar") {
       window.location = "#reservdelar";
@@ -113,6 +121,8 @@ function Header() {
           type="text"
           onKeyUp={contentSearch}
           placeholder="Vad letar du efter?"
+          onKeyDown={handleKeyDown}
+          
         />
       </div>
     </header>
